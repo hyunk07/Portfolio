@@ -613,7 +613,6 @@ header {
   padding: calc(200px + 1vw) 0;
 }
 .skills_container .skills_mibox {
-  height: 200px;
   border-bottom: 1px solid #000;
 }
 .skills_container .skills_mibox svg {
@@ -653,7 +652,7 @@ header {
   align-items: center;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
-  /* gap: 15vw; */
+  gap: 7vw;
 }
 .skills_container .skills_mibox h2 {
   font-weight: 600;
@@ -668,6 +667,7 @@ header {
   line-height: calc(1vw + 1.1rem);
   font-weight: 500;
   font-family: "Pretendard Variable";
+  margin: 30px 10vw 30px 0;
 }
 /* 
 
@@ -702,7 +702,7 @@ header {
   align-items: center;
   display: grid;
   grid-template: 60% 40%/1fr 1fr;
-  margin: 7vw 0;
+  margin-top: 7vw;
 }
 .about_wrapr .about .Profil .me_text {
   /* grid-row: 2 / span 2; */
@@ -723,8 +723,8 @@ header {
   list-style: disc;
 }
 .about_wrapr .contact {
-  width: 30%;
-  padding-bottom: 30px;
+  width: 60%;
+  margin: 7vw 0;
 }
 /* --------------- */
 .text3 {
@@ -741,6 +741,7 @@ header {
 }
 .contact .flex {
   justify-content: space-around;
+  margin-top: 20px;
 }
 .contact li {
   width: 70px;
@@ -794,37 +795,18 @@ header {
 .contact li .talk:hover {
   background-position: right 50%;
 }
-/* footer */
-footer .flex {
-  justify-content: space-around;
-  align-items: end;
-  width: 40%;
-  margin: 50px auto;
-}
-footer li {
-  width: 70px;
-  height: 70px;
-  margin: 20px 0;
-  text-align: center;
-}
-footer li a {
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 100%;
-  text-indent: -9999pc;
-}
+/* git */
 
-footer li .Home {
+.contact li .Home {
   background: url(./images/sns.png) no-repeat;
   background-position: left bottom;
 }
-footer li .Assignment {
+.contact li .Assignment {
   background: url(./images/sns.png) no-repeat;
   background-position: left bottom;
 }
 
-footer li i {
+.contact li i {
   border-radius: 20px;
   background-color: #000;
   overflow: hidden;
@@ -833,7 +815,7 @@ footer li i {
   opacity: 0;
 }
 
-footer li:hover a i {
+.contact li:hover a i {
   display: block;
   width: 70px;
   height: 70px;
@@ -845,11 +827,11 @@ footer li:hover a i {
   transition-duration: 0.2s;
 }
 
-footer li .Home:hover {
+.contact li .Home:hover {
   background-position: right bottom;
 }
 
-footer li .Assignment:hover {
+.contact li .Assignment:hover {
   background-position: right bottom;
 }
 
