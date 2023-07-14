@@ -1,0 +1,279 @@
+@charset 'utf-8';
+
+.upbtn {
+  width: 50px;
+  height: 50px;
+  right: 4.16vw;
+  bottom: 4.16vw;
+}
+.upbtn i {
+  width: 15px;
+  height: 15px;
+  margin-left: -8px;
+  margin-top: -3px;
+}
+/* more-btn */
+
+.more-btn a {
+  font-size: 20px;
+  min-width: 180px;
+  height: 60px;
+  line-height: 60px;
+  padding: 0 80px 0 30px;
+}
+.more-btn a:before {
+  width: 40px;
+  height: 3px;
+  right: 30px;
+}
+.commonness-txt {
+  font-size: 15px;
+}
+.commonness-txt h2 {
+  line-height: 25px;
+  margin-bottom: 20px;
+}
+.commonness-txt h3 {
+  font-size: 40px;
+  line-height: 45px;
+}
+.wrap85 {
+  width: 85%;
+}
+
+/* -- maincontainer -- */
+.main-container .main-box {
+  margin: 130px auto 50px;
+}
+.main-container .main-box .box-txt {
+  margin-left: 50px;
+}
+.main-container .main-box .box-txt h2 {
+  margin-bottom: 30px;
+}
+.main-container .main-box .box-txt h3 {
+  margin-bottom: 20px;
+}
+.main-container .main-box .box-txt p {
+  display: block;
+  margin-right: 14vw;
+}
+
+.main-container .main-box .num-btn li {
+  margin-left: 35px;
+}
+.main-container .main-box .num-btn li a::before {
+  width: 15px;
+  left: -35px;
+}
+
+/* ------ new ------ */
+.main-container .main-arrow {
+  display: inline-block;
+  gap: 1px;
+  justify-content: center;
+}
+.main-container .main-img {
+  max-height: 600px;
+  position: relative;
+}
+.main-container .main-arrow {
+  position: absolute;
+  display: inline-block;
+  right: 15%;
+  top: 540px;
+  z-index: 99999;
+}
+
+.main-container .main-arrow .left-btn,
+.right-btn {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  background: #666666;
+
+  position: relative;
+}
+.main-container .main-arrow .left-btn::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -5px;
+  margin-top: -12px;
+  border-top: #fff solid 2px;
+  border-right: #fff solid 2px;
+  transform: rotate(225deg);
+}
+
+.main-container .main-arrow .right-btn::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -20px;
+  margin-top: -12px;
+  border-top: #fff solid 2px;
+  border-right: #fff solid 2px;
+  transform: rotate(45deg);
+}
+.main-container .main-arrow .left-btn:hover::after {
+  border-top: rgba(255, 255, 255, 0.5) solid 2px;
+  border-right: rgba(255, 255, 255, 0.5) solid 2px;
+}
+.main-container .main-arrow .right-btn:hover::after {
+  border-top: rgba(255, 255, 255, 0.5) solid 2px;
+  border-right: rgba(255, 255, 255, 0.5) solid 2px;
+}
+/* -- container -- */
+
+.main-container .main-box .box-txt h2 {
+  font-size: 55px;
+  line-height: 65px;
+  letter-spacing: -3px;
+}
+.main-container .main-box .box-txt h3,
+p {
+  word-wrap: normal;
+  word-break: keep-all;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 25px;
+}
+/* -- about-container -- */
+.about-container {
+  padding-top: 120px;
+}
+.about-container .about-wrap .commonness-txt {
+  width: 65%;
+  text-align: left;
+}
+.about-container .about-wrap .commonness-txt h3 {
+  font-size: 33px;
+  margin-bottom: 40px;
+}
+.about-container .about-wrap .commonness-txt p {
+  font-size: 15px;
+}
+.about-container .about-wrap .about-img {
+  padding: 0;
+  float: left;
+  width: 45%;
+  aspect-ratio: 1;
+  position: absolute;
+  vertical-align: middle;
+  right: 0;
+  top: 0;
+}
+.about-container .about-wrap .about-img img {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 500px;
+  width: 100%;
+}
+.about-container .about-wrap .more-btn {
+  position: static;
+  margin-top: 97px;
+}
+/* -- store-container -- */
+.commonness-txt .store-title {
+  float: left;
+  width: 50%;
+}
+.commonness-txt .store-text {
+  float: right;
+  width: 50%;
+}
+.store-container .store-wrap {
+  margin-top: 90px;
+}
+
+.store-container .store-imgbox {
+  max-height: 837px;
+  margin-top: 270px;
+  position: relative;
+}
+
+.store-container .store-imgbox .store-info .commonness-txt h3 {
+  margin-bottom: 25px;
+}
+.store-container .store-imgbox .store-info .commonness-txt p {
+  height: 120px;
+}
+.store-container .store-imgbox .store-info .commonness-txt p span {
+  display: block;
+}
+.store-container .store-imgbox .store-info {
+  margin: 0 7.5%;
+  position: absolute;
+  top: 40%;
+  display: inline-block;
+}
+.store-container .store-none {
+  display: none;
+}
+.store-container .store-list {
+  display: block;
+  font-size: 17px;
+  font-weight: 700;
+  color: #fff;
+
+  right: 5%;
+  position: absolute;
+  top: 40%;
+  z-index: 9;
+  text-align: right;
+}
+.store-container .store-list li {
+  margin: 0 50px 20px 0;
+  position: relative;
+}
+.store-container .store-list li a::after {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 3px;
+  background-color: #fff;
+  position: absolute;
+  right: -50px;
+  top: 50%;
+}
+
+/* -- map-container -- */
+
+.map-container .map-wrap.commonness-txt p span {
+  margin: 20px 0;
+  display: block;
+}
+.map-container .map-wrap .commonness-txt {
+  position: relative;
+}
+.map-container .map-wrap .commonness-txt .kakao-map {
+  width: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-height: 465px;
+}
+/* -- info-container -- */
+.info-container .info-wrap {
+  font-size: 15px;
+}
+.info-container .info-wrap .info-sns {
+  font-size: 17px;
+}
+.info-container .info-wrap .info-copy {
+  font-size: 15px;
+}
+.info-container .info-wrap .info-tel strong {
+  width: 95px;
+}
+.info-container .info-wrap .info-me {
+  padding-left: 105px;
+}

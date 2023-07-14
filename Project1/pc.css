@@ -1,0 +1,234 @@
+@charset 'utf-8';
+
+.upbtn {
+  width: 60px;
+  height: 60px;
+}
+.upbtn i {
+  width: 17px;
+  height: 17px;
+  margin-left: -9px;
+  margin-top: -5px;
+}
+.commonness-txt p {
+  font-size: 17px;
+}
+.commonness-txt h2 {
+  font-size: 16px;
+  line-height: 25px;
+  margin-bottom: 20px;
+}
+.commonness-txt h3 {
+  font-size: 50px;
+  line-height: 60px;
+}
+/* ***header*** */
+header .header-wrapper {
+  width: 85%;
+  height: 80px;
+  font-size: 18px;
+}
+
+header h1 {
+  width: 100px;
+  height: 80px;
+}
+header h1 a {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header nav .nav-bar {
+  display: flex;
+  position: static;
+  padding: 0;
+}
+header nav .nav-bar li {
+  position: relative;
+}
+
+header nav .nav-bar li:hover a::after {
+  content: "";
+  width: 90%;
+  height: 3px;
+  display: block;
+  background-color: #131313;
+  position: absolute;
+  top: 60px;
+}
+
+header nav .nav-bar a {
+  border: none;
+  height: 80px;
+  display: grid;
+  place-items: center;
+  padding: 0 20px;
+}
+/* header nav .mobile-btn svg {
+  height: 25px;
+} */
+header nav .mobile-btn {
+  height: 25px;
+  padding-left: 20px;
+}
+/* -----------main----------- */
+.main-container .main-box .box-txt {
+  z-index: 9999;
+}
+.main-container .main-box .box-txt h2 {
+  font-size: 80px;
+  font-weight: 200;
+  line-height: 100px;
+}
+.main-container .main-box .box-txt h3,
+p {
+  font-size: 17px;
+  line-height: 30px;
+}
+.main-container .main-box .box-txt p span {
+  display: block;
+}
+
+/* --------sprite --------*/
+.main-container .main-sns ul {
+  display: block;
+  position: fixed;
+  bottom: 50px;
+  left: 3%;
+  z-index: 99;
+}
+.main-container .main-sns li {
+  width: 30px;
+  height: 30px;
+  margin: 5px 0;
+}
+.main-container .main-sns li a {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-indent: -9999pc;
+}
+.main-container .main-sns li .facebook {
+  background: url(./images/icon_sns.svg) no-repeat;
+  background-position: left top;
+}
+.main-container .main-sns li .instagram {
+  background: url(./images/icon_sns.svg) no-repeat;
+  background-position: left 50%;
+}
+.main-container .main-sns li .youtube {
+  background: url(./images/icon_sns.svg) no-repeat;
+  background-position: left bottom;
+}
+.main-container .main-sns li i {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 20px;
+  background-color: #131313;
+  overflow: hidden;
+  position: absolute;
+  left: 15px;
+  opacity: 0;
+}
+.main-container .main-sns li a:hover i {
+  opacity: 1;
+  left: 0;
+  top: 0;
+  z-index: -9;
+
+  transition-duration: 0.2s;
+}
+.main-container .main-sns li .facebook:hover {
+  background-position: right top;
+}
+.main-container .main-sns li .instagram:hover {
+  background-position: right 50%;
+}
+.main-container .main-sns li .youtube:hover {
+  background-position: right bottom;
+}
+/* --------------------- */
+
+.main-container .main-down {
+  width: 30px;
+  height: 65px;
+  position: absolute;
+  bottom: 90px;
+  right: 1.5vw;
+}
+.main-container .main-down::before {
+  content: "";
+  position: absolute;
+  left: 15px;
+  bottom: 10px;
+  width: 1px;
+  height: 40px;
+  background-color: #131313;
+}
+.main-container .main-down::after {
+  content: "";
+  position: absolute;
+  left: 8px;
+  bottom: 13px;
+  width: 15px;
+  height: 15px;
+  border-right: #131313 solid 1px;
+  transform: rotate(135deg);
+}
+.main-container .main-arrow {
+  top: 425px;
+}
+
+.main-container .main-img {
+  transform: translateY(-270px);
+  transition: 0.1s;
+}
+
+/* -- about-container -- */
+.about-container .about-wrap .commonness-txt h3 {
+  font-size: 45px;
+  margin-bottom: 60px;
+}
+.about-container .about-wrap .commonness-txt p {
+  font-size: 17px;
+}
+/* ***ani-container*** */
+.ani {
+  margin-top: 180px;
+}
+/* -- map-container -- */
+.map-container .map-wrap {
+  padding: 130px 0;
+}
+
+/* -- info-container -- */
+.info-container .info-wrap {
+  flex-direction: row;
+  justify-content: space-around;
+}
+.info-container .info-wrap div div {
+  height: 40px;
+}
+.info-container .info-wrap menu li {
+  height: 40px;
+}
+.info-container .info-wrap .info-sns {
+  flex-direction: column;
+  font-size: 20px;
+}
+.info-container .info-wrap .info-copy {
+  flex-direction: column;
+  padding: 0;
+}
+.info-container .info-wrap .info-me {
+  padding-left: 0;
+}
