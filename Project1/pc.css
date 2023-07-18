@@ -23,6 +23,9 @@
   line-height: 60px;
 }
 /* ***header*** */
+header {
+  transition: 0.5s;
+}
 header .header-wrapper {
   width: 85%;
   height: 80px;
@@ -54,7 +57,7 @@ header nav .nav-bar li {
   position: relative;
 }
 
-header nav .nav-bar li:hover a::after {
+/* header nav .nav-bar li:hover a::after {
   content: "";
   width: 90%;
   height: 3px;
@@ -62,8 +65,24 @@ header nav .nav-bar li:hover a::after {
   background-color: #131313;
   position: absolute;
   top: 60px;
+  animation: move 3s linear 1s;
+} */
+header nav .nav-bar li a::after {
+  position: absolute;
+  top: 60px;
+  content: "";
+  display: block;
+  border-bottom: 3px solid #000;
+  transition: width 250ms ease-out;
+  left: auto;
+  right: 0;
+  width: 0;
 }
-
+header nav .nav-bar li:hover a::after {
+  width: 100%;
+  left: 0;
+  right: auto;
+}
 header nav .nav-bar a {
   border: none;
   height: 80px;
@@ -71,12 +90,10 @@ header nav .nav-bar a {
   place-items: center;
   padding: 0 20px;
 }
-/* header nav .mobile-btn svg {
-  height: 25px;
-} */
 header nav .mobile-btn {
   height: 25px;
   padding-left: 20px;
+  display: none;
 }
 /* -----------main----------- */
 .main-container .main-box .box-txt {
@@ -136,10 +153,10 @@ p {
   background-color: #131313;
   overflow: hidden;
   position: absolute;
-  left: 15px;
+  left: -115px;
   opacity: 0;
 }
-.main-container .main-sns li a:hover i {
+.main-container .main-sns li:hover a i {
   opacity: 1;
   left: 0;
   top: 0;
@@ -147,13 +164,13 @@ p {
 
   transition-duration: 0.2s;
 }
-.main-container .main-sns li .facebook:hover {
+.main-container .main-sns li:hover .facebook {
   background-position: right top;
 }
-.main-container .main-sns li .instagram:hover {
+.main-container .main-sns li:hover .instagram {
   background-position: right 50%;
 }
-.main-container .main-sns li .youtube:hover {
+.main-container .main-sns li:hover .youtube {
   background-position: right bottom;
 }
 /* --------------------- */
