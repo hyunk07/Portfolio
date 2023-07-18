@@ -21,6 +21,23 @@ body {
   width: 87%;
   margin: 0 auto;
 }
+.unline {
+  font-weight: 500;
+  font-size: 3.75rem;
+  text-decoration: underline 2px;
+  text-underline-offset: 22px;
+  position: relative;
+}
+.unline::before {
+  content: "";
+  display: block;
+  background-color: #000;
+  width: 200px;
+  height: 2px;
+  position: absolute;
+  bottom: -9px;
+  left: -200px;
+}
 /* -------header------- */
 header {
   box-sizing: border-box;
