@@ -1,0 +1,145 @@
+@charset 'utf-8';
+
+/* -----SWOT----- */
+.swot_wrap ul {
+  width: 80%;
+  margin: 0 auto;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: center;
+  gap: 0.5vw;
+}
+.swot_wrap ul > li {
+  /* width: 32vw; */
+  width: 100%;
+  height: 22vh;
+  border: 1px solid #000;
+  position: relative;
+}
+.swot_wrap ul > li ol {
+  width: 70%;
+  position: absolute;
+  top: 50%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+  z-index: 9;
+}
+.swot_wrap ul > li p {
+  display: block;
+  width: 9vw;
+  aspect-ratio: 1;
+  background-color: #dbfe04;
+  text-align: center;
+}
+.swot_wrap ul > li:nth-child(1) {
+  border-top-left-radius: 30px;
+}
+.swot_wrap ul > li:nth-child(1) p {
+  border-top-left-radius: 10vw;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.swot_wrap ul > li:nth-child(1) p > i {
+  position: absolute;
+  bottom: 30px;
+  right: 10px;
+}
+.swot_wrap ul > li:nth-child(2) {
+  border-top-right-radius: 30px;
+}
+.swot_wrap ul > li:nth-child(2) p {
+  border-top-right-radius: 10vw;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.swot_wrap ul > li:nth-child(2) p > i {
+  position: absolute;
+  bottom: 30px;
+  left: 10px;
+}
+.swot_wrap ul > li:nth-child(3) {
+  border-end-start-radius: 30px;
+}
+.swot_wrap ul > li:nth-child(3) p {
+  border-end-start-radius: 10vw;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.swot_wrap ul > li:nth-child(3) p > i {
+  position: absolute;
+  top: 30px;
+  right: 10px;
+}
+.swot_wrap ul > li:nth-child(4) {
+  border-bottom-right-radius: 30px;
+}
+.swot_wrap ul > li:nth-child(4) p {
+  border-bottom-right-radius: 10vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.swot_wrap ul > li:nth-child(4) p > i {
+  position: absolute;
+  top: 30px;
+  left: 25px;
+}
+/* -----UX-VISION----- */
+.vision_wrap {
+  margin: 20vh 0;
+  text-align: center;
+  font-size: calc(1.5rem + 1vw);
+  font-weight: 700;
+}
+/* -----As is/To be----- */
+.at_box h2 {
+  width: 200px;
+  display: block;
+  text-align: center;
+  border-radius: 30px;
+  padding: 10px 0;
+  font-weight: 700;
+  font-size: 2rem;
+  position: relative;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.as_box h2 {
+  background-color: #d9d9d9;
+  color: #fff;
+}
+.to_box h2 {
+  background-color: #dbfe04;
+}
+.at_box ul {
+  border-radius: 10px;
+  padding: 70px;
+  box-shadow: rgba(0, 0, 0, 0.24) 7px 7px 10px, rgba(0, 0, 0, 0.1) -3px -3px 5px;
+}
+.tri_box {
+  width: 0px;
+  height: 0px;
+  border-left: 50px solid rgba(217, 217, 217, 0.7);
+  border-top: 150px solid transparent;
+  border-bottom: 150px solid transparent;
+}
+/* -----와이어프레임----- */
+.frame_wrap {
+  width: 90%;
+  margin: 70px auto;
+}
+/* -----Design----- */
+/* -----Prototype----- */
+.pro_wrap ul li {
+  width: 24%;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 4vw;
+}
+.pro_wrap ul li img {
+  margin-bottom: 2vw;
+}
