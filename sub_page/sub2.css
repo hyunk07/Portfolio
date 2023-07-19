@@ -1,5 +1,10 @@
 @charset 'utf-8';
 
+/* -----main----- */
+.main_wrap .main_bg {
+  background: rgba(221, 254, 4, 0.5) url(./images/uiuxpreview.png) no-repeat 50%
+    35% / 75%;
+}
 /* -----SWOT----- */
 .swot_wrap ul {
   width: 80%;
@@ -12,7 +17,7 @@
 .swot_wrap ul > li {
   /* width: 32vw; */
   width: 100%;
-  height: 22vh;
+  padding: 150px 0;
   border: 1px solid #000;
   position: relative;
 }
@@ -95,6 +100,10 @@
   font-weight: 700;
 }
 /* -----As is/To be----- */
+.at_wrap {
+  justify-content: space-around;
+  /* align-items: center; */
+}
 .at_box h2 {
   width: 200px;
   display: block;
@@ -104,7 +113,7 @@
   font-weight: 700;
   font-size: 2rem;
   position: relative;
-  top: 10%;
+  top: 5%;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -115,24 +124,61 @@
 .to_box h2 {
   background-color: #dbfe04;
 }
-.at_box ul {
-  border-radius: 10px;
-  padding: 70px;
-  box-shadow: rgba(0, 0, 0, 0.24) 7px 7px 10px, rgba(0, 0, 0, 0.1) -3px -3px 5px;
-}
 .tri_box {
   width: 0px;
   height: 0px;
   border-left: 50px solid rgba(217, 217, 217, 0.7);
   border-top: 150px solid transparent;
   border-bottom: 150px solid transparent;
+
+  /* position: relative; */
+  /* bottom: 10%; */
+  transform: translatey(40%);
+}
+.at_box ul {
+  border-radius: 10px;
+  padding: 100px 70px;
+  box-shadow: rgba(0, 0, 0, 0.24) 7px 7px 10px, rgba(0, 0, 0, 0.1) -3px -3px 5px;
+}
+.at_box ul li {
+  margin-bottom: 25px;
+  font-size: 20px;
+  position: relative;
+}
+.at_box ul li strong {
+  box-shadow: inset 0 -10px 0 rgba(221, 254, 4, 0.5);
 }
 /* -----와이어프레임----- */
 .frame_wrap {
   width: 90%;
-  margin: 70px auto;
+  margin: 10vw auto;
 }
 /* -----Design----- */
+.design_wrap {
+  justify-content: space-around;
+}
+.design_color menu li:nth-child(1) {
+  background-color: #6b99cf;
+  color: #fff;
+}
+.design_color menu li:nth-child(2) {
+  background-color: #f9f2eb;
+}
+.design_color menu li:nth-child(3) {
+  background-color: #333333;
+  color: #fff;
+}
+
+.paper {
+  margin-right: 50px;
+}
+.design_txt .font_w {
+  gap: 5vw;
+  align-items: center;
+}
+.design_font .design_txt h3 {
+  margin-bottom: 20px;
+}
 /* -----Prototype----- */
 .pro_wrap ul li {
   width: 24%;
@@ -143,3 +189,9 @@
 .pro_wrap ul li img {
   margin-bottom: 2vw;
 }
+/* -----프로젝트결과,최종리뷰----- */
+.result_container,
+.prev_container {
+  grid-template-columns: 30% 70%;
+}
+/*  */
