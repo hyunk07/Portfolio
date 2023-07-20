@@ -1,0 +1,34 @@
+/* -----main----- */
+.main_wrap .main_bg {
+  background: rgba(221, 254, 4, 0.5) url(./images/urbanic30preview.png)
+    no-repeat 65% -10% / 95%;
+}
+/* -----Design----- */
+.design_wrap {
+  justify-content: space-around;
+}
+.design_color menu li:nth-child(1) {
+  background-color: #afafaf;
+}
+.design_color menu li:nth-child(2) {
+  background-color: #131313;
+  color: #fff;
+}
+.design_color menu li:nth-child(3) {
+  background-color: #000000;
+  color: #fff;
+}
+.design_grid .grid_box img {
+  width: 50%;
+}
+.design_txt .font_w {
+  gap: 5vw;
+  align-items: center;
+}
+.design_font .design_txt h3 {
+  margin-bottom: 20px;
+}
+/* 폰트설정 */
+.pre_font menu li {
+  font-weight: 400;
+}

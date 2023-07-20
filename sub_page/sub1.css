@@ -3,13 +3,18 @@
 /* -----main----- */
 .main_wrap .main_bg {
   background: rgba(221, 254, 4, 0.5) url(./images/grangpreview.png) no-repeat
-    50% / 50%;
+    50% / 60%;
 }
 /* -----Design----- */
 .design_key li {
+  border-radius: 0 50px 10px 20px;
   background: url(images/text_bg.PNG) no-repeat 50% /150%;
 }
-
+.design_font .design_txt h3 span {
+  font-size: 16px;
+  margin-left: 10px;
+  font-weight: 400;
+}
 .design_color menu li:nth-child(1) {
   background-color: #fdfbf4;
 }
@@ -25,9 +30,6 @@
   color: #fff;
   border-top-right-radius: 50px;
 }
-/* .design_txt .font_w {
-  justify-content: space-around;
-} */
 
 .paper {
   margin-left: 50px;
@@ -42,17 +44,15 @@
   margin-bottom: 70px;
 }
 /* -----폰트설정----- */
-.pre_font {
-  font-family: serif;
-}
+
 .pre_font menu li:nth-child(1) {
-  font-weight: normal;
+  font-weight: 300;
 }
 .pre_font menu li:nth-child(2) {
-  font-weight: 500;
+  font-weight: 400;
 }
 .pre_font menu li:nth-child(3) {
-  font-weight: normal;
+  font-weight: 500;
 }
 .pre_font menu li:nth-child(4) {
   font-weight: 700;
@@ -61,36 +61,26 @@
 .pop_font {
   font-family: "Poppins";
 }
+.pop_font ul li:nth-child(3) {
+  min-width: 290px;
+}
 .pop_font menu li:nth-child(1) {
-  font-weight: normal;
+  font-weight: 400;
 }
 .pop_font menu li:nth-child(2) {
-  font-weight: normal;
+  font-weight: 500;
 }
 .pop_font menu li:nth-child(3) {
-  font-weight: normal;
+  font-weight: 600;
 }
 .pop_font menu li:nth-child(4) {
   font-weight: 700;
 }
 /* -----Publishing----- */
 .Publ_wrap ul li {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
+  margin-left: 30px;
 }
 .Publ_wrap p {
-  margin-bottom: 40px;
-}
-/* -----Problem & Solution----- */
-.ps_container .under_box h1 span {
-  display: block;
-}
-.Publ_wrap,
-.ps_wrap {
-  text-transform: lowercase;
-}
-.ps_box {
-  margin-bottom: 70px;
-}
-.ps_txt {
-  margin-bottom: 25px;
+  margin-bottom: 35px;
 }

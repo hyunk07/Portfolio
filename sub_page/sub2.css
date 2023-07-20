@@ -23,6 +23,7 @@
 }
 .swot_wrap ul > li ol {
   width: 70%;
+  margin-left: -30px;
   position: absolute;
   top: 50%;
   left: 65%;
@@ -116,6 +117,7 @@
   top: 5%;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 9;
 }
 .as_box h2 {
   background-color: #d9d9d9;
@@ -131,19 +133,28 @@
   border-top: 150px solid transparent;
   border-bottom: 150px solid transparent;
 
-  /* position: relative; */
-  /* bottom: 10%; */
-  transform: translatey(40%);
+  transform: translatey(55%);
 }
-.at_box ul {
+.at_box .atsha_box {
+  width: 28.6vw;
+  height: 620px;
   border-radius: 10px;
-  padding: 100px 70px;
   box-shadow: rgba(0, 0, 0, 0.24) 7px 7px 10px, rgba(0, 0, 0, 0.1) -3px -3px 5px;
+  position: relative;
+}
+.at_box .atsha_box ul {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .at_box ul li {
-  margin-bottom: 25px;
   font-size: 20px;
   position: relative;
+  width: 85%;
+  margin: 35px auto;
+  font-weight: 500;
 }
 .at_box ul li strong {
   box-shadow: inset 0 -10px 0 rgba(221, 254, 4, 0.5);
@@ -157,9 +168,15 @@
 .design_wrap {
   justify-content: space-around;
 }
+.design_key ul li {
+  background-color: #f9f2eb;
+  border-radius: 50px;
+  border: #6b99cf 5px solid;
+}
 .design_color menu li:nth-child(1) {
   background-color: #6b99cf;
   color: #fff;
+  border-start-start-radius: 50px;
 }
 .design_color menu li:nth-child(2) {
   background-color: #f9f2eb;
@@ -167,6 +184,8 @@
 .design_color menu li:nth-child(3) {
   background-color: #333333;
   color: #fff;
+  /* border-radius: 50px; */
+  border-bottom-right-radius: 50px;
 }
 
 .paper {
@@ -183,15 +202,11 @@
 .pro_wrap ul li {
   width: 24%;
   text-align: center;
-  font-size: 1.5rem;
+  font-weight: 600;
   margin-top: 4vw;
 }
 .pro_wrap ul li img {
   margin-bottom: 2vw;
 }
-/* -----프로젝트결과,최종리뷰----- */
-.result_container,
-.prev_container {
-  grid-template-columns: 30% 70%;
-}
+
 /*  */
