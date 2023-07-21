@@ -1,3 +1,11 @@
+@charset "utf-8";
+
+/* font-family: 'Abhaya Libre', serif; --en-txt-font */
+@import url("https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap");
+
+/* font-family: 'Gowun Batang', serif; --kr-sub-font */
+@import url("https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap");
+
 /* -----main----- */
 .main_wrap .main_bg {
   background: rgba(221, 254, 4, 0.5) url(./images/urbanic30preview.png)
@@ -6,7 +14,14 @@
 /* -----Design----- */
 .design_wrap {
   justify-content: space-around;
+
+  white-space: nowrap;
 }
+
+.design_key li {
+  font-weight: 700;
+}
+
 .design_color menu li:nth-child(1) {
   background-color: #afafaf;
 }
@@ -18,8 +33,21 @@
   background-color: #000000;
   color: #fff;
 }
+.design_grid .grid_box {
+  width: 35vw;
+  text-align: center;
+}
+.design_grid .grid_box {
+  color: #afafaf;
+}
+.design_grid .grid_box strong {
+  font-size: 24px;
+  color: #131313;
+  margin-right: 10px;
+}
 .design_grid .grid_box img {
-  width: 50%;
+  margin-top: 30px;
+  width: 100%;
 }
 .design_txt .font_w {
   gap: 5vw;
@@ -28,7 +56,52 @@
 .design_font .design_txt h3 {
   margin-bottom: 20px;
 }
-/* 폰트설정 */
+
+/* -----폰트설정----- */
+.al_font {
+  font-family: "Abhaya Libre";
+}
+.al_font menu li:nth-child(1) {
+  font-weight: 400;
+}
+.al_font menu li:nth-child(2) {
+  font-weight: 500;
+}
+.al_font menu li:nth-child(3) {
+  font-weight: 600;
+}
+.al_font menu li:nth-child(4) {
+  font-weight: 700;
+}
+.al_font menu li:nth-child(5) {
+  font-weight: 800;
+}
+/* ----- */
+
 .pre_font menu li {
   font-weight: 400;
+}
+/* ----- */
+.gb_font {
+  font-family: "Gowun Batang";
+}
+.gb_font ul li:nth-child(3) {
+  min-width: 290px;
+}
+.gb_font menu li:nth-child(1) {
+  font-weight: 400;
+}
+.gb_font menu li:nth-child(2) {
+  font-weight: 700;
+}
+/* Publishing */
+.Publ_wrap {
+  margin-top: 6vw;
+}
+.Publ_wrap a {
+  font-size: 20px;
+  margin-left: 40px;
+}
+.Publ_wrap img {
+  width: 22px;
 }

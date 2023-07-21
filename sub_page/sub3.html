@@ -8,10 +8,8 @@
     <title>urbanic30</title>
     <!-- 파비콘 -->
     <link rel="shortcut icon" href="../common/favicon.ioc/Hyunk/favicon.ico" type="image/x-icon" />
-    <link rel="apple-touch-icon" sizes="180x180" href="../common/favicon.ioc/Hyunk/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="../common/favicon.ioc/Hyunk/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="../common/favicon.ioc/Hyunk/favicon-16x16.png" />
-    <link rel="manifest" href="../common/favicon.ioc/Hyunk/site.webmanifest" />
+    <!-- 폰트 -->
+    <link rel="stylesheet" href="../common/style/pretendardvariable-dynamic-subset.css" />
     <!-- css -->
     <link rel="stylesheet" href="../common/style/reset.css" />
     <link rel="stylesheet" href="./common.css" />
@@ -38,10 +36,10 @@
                 </div>
             </div>
             <ul class="flex">
-                <li><a href="#">main</a></li>
-                <li><a href="#project">project</a></li>
-                <li><a href="#skill">skill</a></li>
-                <li><a href="#about">about me</a></li>
+                <li><a href="../">main</a></li>
+                <li><a href="../index.html#project">project</a></li>
+                <li><a href="../index.html#skill">skill</a></li>
+                <li><a href="../index.html#about">about me</a></li>
             </ul>
         </nav>
     </header>
@@ -96,6 +94,7 @@
                         <ul class="flex">
                             <li>깔끔한</li>
                             <li>차분한</li>
+                            <li>세련된</li>
                         </ul>
                     </div>
                     <div class="design_color">
@@ -199,16 +198,20 @@
         <div class="Publ_container grid w87">
             <div class="under_box">
                 <h1 class="unline">Publishing</h1>
-                <div class="publ_box"><a href="#">퍼블리싱가이드라인 보러가기</a></div>
             </div>
-            <div class="Publ_wrap wrap">
+            <div class="Publbtn_box">
+                <div class="btn_box"><a href="#">퍼블리싱가이드라인 보러가기</a></div>
+                <div class="Publ_wrap wrap">
+                    <p class="m_dot">카카오 API를 통한 매장 위치정보제공</p>
+                    <p class="m_dot">flex를 활용한 레이아웃 정렬</p>
+                    <p class="m_dot">AOS를 사용한 스크롤효과</p>
+                    <p class="m_dot">로딩 .gif제작</p>
+                    <p class="m_dot">.setInterval()를 사용하여 페이지 로딩 효과를 줌
+                    </p>
+                    <a href=""><img src="./images/open_outline_icon.svg" alt="">기술서보러가기</a>
+                </div>
+            </div>
 
-                <p class="m_dot">카카오 API를 통한 매장 위치정보제공</p>
-                <p class="m_dot">flex를 활용한 레이아웃 정렬</p>
-                <p class="m_dot">AOS를 사용한 스크롤효과</p>
-                <p class="m_dot">로딩 .gif제작</p>
-                <p class="m_dot">.setInterval()를 사용하여 페이지 로딩 효과를 줌</p>
-            </div>
         </div>
     </section>
     <!-- Problem & Solution -->
@@ -312,8 +315,8 @@
     <footer>
         <div class="foot_continer">
             <div class="foot_wrap flex">
-                <div class="foot_box"><a href="/">포로폴리오 바로가기</a></div>
-                <div class="foot_box"><a href="#">View Site </a></div>
+                <!-- <div class="btn_box"><a href="/">포로폴리오 바로가기</a></div> -->
+                <div class="btn_box"><a href="https://jyp-j-p.github.io/JYP_Project/">View Site </a></div>
             </div>
             <div class="footertxt ">
                 © 2023 Design & Published By Leehyunkyoung All rights reserved

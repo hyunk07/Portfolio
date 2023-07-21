@@ -8,15 +8,17 @@
 /* -----Design----- */
 .design_key li {
   border-radius: 0 50px 10px 20px;
-  background: url(images/text_bg.PNG) no-repeat 50% /150%;
+  background: url(images/text_bg.PNG) no-repeat 50% / cover;
 }
 .design_font .design_txt h3 span {
   font-size: 16px;
   margin-left: 10px;
   font-weight: 400;
 }
+
 .design_color menu li:nth-child(1) {
   background-color: #fdfbf4;
+  border-bottom-left-radius: 50px;
 }
 .design_color menu li:nth-child(2) {
   background-color: #131313;
