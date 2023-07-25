@@ -5,6 +5,9 @@ html {
     "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif;
 
   /*HSBombaram , MuseumClassic */
+
+  line-height: 1.5;
+  letter-spacing: 1px;
 }
 .grid {
   display: grid;
@@ -24,6 +27,15 @@ h1 {
 }
 h2 {
   font-family: "HSBombaram";
+}
+.info_txt h2,
+.exhibi_txt h2 {
+  font-size: calc(20px + 1vw);
+  margin: 5vw 0 10vw;
+}
+.info_txt p,
+.exhibi_txt p {
+  font-size: calc(14px + 1vw);
 }
 section {
   margin: 7vh 0;
@@ -103,13 +115,7 @@ section {
   text-align: center;
   margin-top: 7vw;
 }
-.info_txt h2 {
-  font-size: calc(20px + 1vw);
-  margin: 5vw 0 10vw;
-}
-.info_txt p {
-  font-size: calc(14px + 1vw);
-}
+
 .info_txt .info_box {
   /* font-family: "MuseumClassic"; */
   font-weight: 400;
@@ -158,6 +164,14 @@ section {
   position: relative;
   overflow: hidden;
 }
+.exhibi_txt {
+  width: 90%;
+  margin: 0 auto;
+}
+.exhibi_txt p {
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
 /* -----docent----- */
 .docent_container {
   width: 100%;
@@ -205,4 +219,24 @@ section {
   border-bottom: 1px solid #000;
   padding: calc(20px + 1vw) 0;
   justify-content: space-between;
+}
+/* -----sumit----- */
+.sumit_wrap {
+  width: 90%;
+  margin: 0 auto;
+}
+.sumit_wrap input {
+  width: 100%;
+  border: #000 2px solid;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 3vw;
+}
+.sumit_wrap .dropdown {
+  border: #000 2px solid;
+  border-radius: 10px;
+  padding: 20px 0;
+  padding: 20px;
+  margin-bottom: 3vw;
+  width: 100%;
 }

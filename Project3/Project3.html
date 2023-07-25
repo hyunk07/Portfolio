@@ -13,11 +13,15 @@
   <!-- <link rel="manifest" href="../common/favicon.ioc/GRANHAND/site.webmanifest" />  -->
   <!-- css -->
   <link rel="stylesheet" href="../common/style/reset.css" />
+    <!-- swiper css -->
+  <link rel="stylesheet" href="./swiper-bundle.min.css" />
 
   <link rel="stylesheet" href="./slide.css" />
   <link rel="stylesheet" href="./Project3.css" />
 
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js"></script>
+  <!-- swiper js -->
+  <script src="./swiper-bundle.min.js"></script>
   <script defer src="./Project3.js"></script>
 
 <body>
@@ -173,60 +177,19 @@
       <h1>전시안내</h1>
       <div class="exhibi_wrap grid">
         <div class="exhibi_left">
-          <div class="exhibi_slide">
-            <ul class="slideWrapper">
-              <li class="slidItem" id="bg1">bg1</li>
-              <li class="slidItem" id="bg2">bg2</li>
-              <li class="slidItem" id="bg3">bg3</li>
-            </ul>
-            <div class="btn_arrow flex">
-              <div class="left_arrow">
-                <svg xmlns="http://www.w3.org/2000/svg" width="61" height="167" viewBox="0 0 61 167" fill="none">
-                  <path
-                    d="M0 0L0.000195503 166.5C0.000195503 149.98 19.0315 124.794 34.65 119.408L35.2249 119.209C50.4994 113.943 60.75 99.5652 60.75 83.4081C60.75 67.2511 50.4994 52.8735 35.2249 47.6064L34.65 47.4081C19.0315 42.0224 0 16.5209 0 0Z"
-                    fill="#EFE8DF" />
-                  <path
-                    d="M33.75 106.2C46.1764 106.2 56.25 96.1264 56.25 83.7C56.25 71.2735 46.1764 61.2 33.75 61.2C21.3236 61.2 11.25 71.2735 11.25 83.7C11.25 96.1264 21.3236 106.2 33.75 106.2Z"
-                    fill="#393939" />
-                  <mask id="mask0_69_97" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="20" y="72" width="28"
-                    height="23">
-                    <path d="M20.25 94.5H47.25V72.9H20.25L20.25 94.5Z" fill="white" />
-                  </mask>
-                  <g mask="url(#mask0_69_97)">
-                    <path
-                      d="M31.3293 94.4999L20.2441 83.6999L31.3293 72.8999L32.3818 73.7706L26.3952 82.7278L47.2496 81.9587V85.4892L26.4446 84.7201L32.3818 93.6827L31.3293 94.4999Z"
-                      fill="#EFE8DF" />
-                    <path
-                      d="M31.3293 94.4999L20.2441 83.6999L31.3293 72.8999L32.3818 73.7706L26.3952 82.7278L47.2496 81.9587V85.4892L26.4446 84.7201L32.3818 93.6827L31.3293 94.4999Z"
-                      fill="#EFE8DF" />
-                  </g>
-                </svg>
-              </div>
-              <div class="right_arrow">
-                <svg xmlns="http://www.w3.org/2000/svg" width="61" height="167" viewBox="0 0 61 167" fill="none">
-                  <path
-                    d="M60.75 0V166.5C60.75 149.98 41.7185 124.794 26.1 119.408L25.525 119.209C10.2506 113.943 0 99.5652 0 83.4081C0 67.2511 10.2506 52.8735 25.525 47.6064L26.1 47.4081C41.7185 42.0224 60.75 16.5209 60.75 0Z"
-                    fill="#F4F0ED" />
-                  <path
-                    d="M27.9014 61.2C15.475 61.2 5.40137 71.2735 5.40137 83.7C5.40137 96.1264 15.475 106.2 27.9014 106.2C40.3278 106.2 50.4014 96.1264 50.4014 83.7C50.4014 71.2735 40.3278 61.2 27.9014 61.2Z"
-                    fill="#393939" />
-                  <mask id="mask0_69_96" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="14" y="72" width="28"
-                    height="23">
-                    <path d="M41.4014 72.8999H14.4014V94.4999H41.4014V72.8999Z" fill="white" />
-                  </mask>
-                  <g mask="url(#mask0_69_96)">
-                    <path
-                      d="M30.3217 72.8999L41.4069 83.6999L30.3217 94.4999L29.2692 93.6296L35.2558 84.672L14.4014 85.4411V81.9106L35.2064 82.6798L29.2692 73.7171L30.3217 72.8999Z"
-                      fill="#EFE8DF" />
-                    <path
-                      d="M30.3217 72.8999L41.4069 83.6999L30.3217 94.4999L29.2692 93.6296L35.2558 84.672L14.4014 85.4411V81.9106L35.2064 82.6798L29.2692 73.7171L30.3217 72.8999Z"
-                      fill="#EFE8DF" />
-                  </g>
-                </svg>
-              </div>
-            </div>
-          </div>
-        </div>
+         <div class="swiper mySwiper1">
+    <!-- .swiper-wrapper 슬라이드 이미지 영역 -->
+    <div class="swiper-wrapper">
+      <!-- .swiper-slide 개별 이미지 -->
+      <div class="swiper-slide bg1">Slide 1</div>
+      <div class="swiper-slide bg2">Slide 2</div>
+      <div class="swiper-slide bg3">Slide 3</div>
+    </div>
+    <!-- 추가 옵션: 좌우 버튼 -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+</div>
         <div class="exhibi_right">
           <div class="exhibi_txt">
             <h2>기억 전당포 : 1990 서울 나들이 展</h2>
@@ -270,58 +233,8 @@
           </div>
         </div>
         <div class="docent_right">
-          <div class="docent_slide">
-            <ul class="gallery">
-              <li class="slidItem" id="bg1">bg</li>
-              <li class="slidItem" id="bg2">bg</li>
-              <li class="slidItem" id="bg3">bg</li>
-            </ul>
-          </div>
-          <div class="btn_arrow flex">
-            <div class="docent_left_arrow">
-              <svg xmlns="http://www.w3.org/2000/svg" width="61" height="167" viewBox="0 0 61 167" fill="none">
-                <path
-                  d="M0 0L0.000195503 166.5C0.000195503 149.98 19.0315 124.794 34.65 119.408L35.2249 119.209C50.4994 113.943 60.75 99.5652 60.75 83.4081C60.75 67.2511 50.4994 52.8735 35.2249 47.6064L34.65 47.4081C19.0315 42.0224 0 16.5209 0 0Z"
-                  fill="#F4F0ED" />
-                <path
-                  d="M33.75 106.2C46.1764 106.2 56.25 96.1264 56.25 83.7C56.25 71.2735 46.1764 61.2 33.75 61.2C21.3236 61.2 11.25 71.2735 11.25 83.7C11.25 96.1264 21.3236 106.2 33.75 106.2Z"
-                  fill="#393939" />
-                <mask id="mask0_69_97" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="20" y="72" width="28"
-                  height="23">
-                  <path d="M20.25 94.5H47.25V72.9H20.25L20.25 94.5Z" fill="white" />
-                </mask>
-                <g mask="url(#mask0_69_97)">
-                  <path
-                    d="M31.3293 94.4999L20.2441 83.6999L31.3293 72.8999L32.3818 73.7706L26.3952 82.7278L47.2496 81.9587V85.4892L26.4446 84.7201L32.3818 93.6827L31.3293 94.4999Z"
-                    fill="#EFE8DF" />
-                  <path
-                    d="M31.3293 94.4999L20.2441 83.6999L31.3293 72.8999L32.3818 73.7706L26.3952 82.7278L47.2496 81.9587V85.4892L26.4446 84.7201L32.3818 93.6827L31.3293 94.4999Z"
-                    fill="#EFE8DF" />
-                </g>
-              </svg>
-            </div>
-            <div class="docent_right_arrow">
-              <svg xmlns="http://www.w3.org/2000/svg" width="61" height="167" viewBox="0 0 61 167" fill="none">
-                <path
-                  d="M60.75 0V166.5C60.75 149.98 41.7185 124.794 26.1 119.408L25.525 119.209C10.2506 113.943 0 99.5652 0 83.4081C0 67.2511 10.2506 52.8735 25.525 47.6064L26.1 47.4081C41.7185 42.0224 60.75 16.5209 60.75 0Z"
-                  fill="#F4F0ED" />
-                <path
-                  d="M27.9014 61.2C15.475 61.2 5.40137 71.2735 5.40137 83.7C5.40137 96.1264 15.475 106.2 27.9014 106.2C40.3278 106.2 50.4014 96.1264 50.4014 83.7C50.4014 71.2735 40.3278 61.2 27.9014 61.2Z"
-                  fill="#393939" />
-                <mask id="mask0_69_96" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="14" y="72" width="28"
-                  height="23">
-                  <path d="M41.4014 72.8999H14.4014V94.4999H41.4014V72.8999Z" fill="white" />
-                </mask>
-                <g mask="url(#mask0_69_96)">
-                  <path
-                    d="M30.3217 72.8999L41.4069 83.6999L30.3217 94.4999L29.2692 93.6296L35.2558 84.672L14.4014 85.4411V81.9106L35.2064 82.6798L29.2692 73.7171L30.3217 72.8999Z"
-                    fill="#EFE8DF" />
-                  <path
-                    d="M30.3217 72.8999L41.4069 83.6999L30.3217 94.4999L29.2692 93.6296L35.2558 84.672L14.4014 85.4411V81.9106L35.2064 82.6798L29.2692 73.7171L30.3217 72.8999Z"
-                    fill="#EFE8DF" />
-                </g>
-              </svg>
-            </div>
+          <div class="swiper mySwiper2">
+           
           </div>
 
         </div>
@@ -342,7 +255,7 @@
   <section>
     <div class="sumit_container">
       <h1>체험사전예약하기</h1>
-      <form class="sumit_wrap grid">
+      <form class="sumit_wrap ">
         <input type="text" name="userName" placeholder="신청자이름">
         <!-- <input type="text" name="number " placeholder="인원수"> -->
         <select id="num_dropdown" class="dropdown">
