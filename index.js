@@ -45,6 +45,8 @@ $(".innexBtn")
   .on("click", () => {
     $(" .ingallery> li").first().appendTo(".ingallery");
   });
+
+  
 /* 팀 */
 $(".tprevBtn").on("click", () => {
   $(" .tgallery > li").last().prependTo(".tgallery ");

@@ -1,0 +1,115 @@
+<!Doctype html>
+<html lang="ko">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <title>animateEx2</title>
+
+   <script src="../common/jquery-3.7.0.min.js"></script>
+   <script src="../common/jquery-ui.min.js"></script>
+
+   <style>
+      ul {
+         padding: 0;
+         margin: 0;
+         list-style: none;
+      }
+
+      img {
+         /* width: 100%; */
+         width: 70vw;
+         height: 350px;
+         vertical-align: top;
+         object-fit: cover;
+      }
+
+      .container {
+         width: 70vw;
+         height: 350px;
+         /* aspect-ratio: 2/1; */
+         margin: 50px auto;
+         position: relative;
+         overflow: hidden;
+      }
+
+      .container .btn_group {
+         width: 30%;
+         display: flex;
+         justify-content: space-between;
+         position: absolute;
+         bottom: 20px;
+         left: 50%;
+         transform: translateX(-50%);
+         z-index: 9999;
+      }
+
+      .container .btn_group li {
+         background-color: rgba(255, 255, 255, 0.8);
+         border-radius: 50%;
+         text-indent: -999999999px;
+         width: 10px;
+         height: 10px;
+         cursor: pointer;
+      }
+
+      .container .btn_group li:hover {
+         background-color: rgb(139, 139, 139);
+      }
+
+      .container .slider {
+         display: flex;
+         width: 280vw;
+
+         position: relative;
+      }
+
+      .container .slider li {
+         flex-grow: 1;
+      }
+   </style>
+</head>
+
+<body>
+   <div class="container">
+      <ul class="btn_group">
+         <li>1</li>
+         <li>2</li>
+         <li>3</li>
+         <li>4</li>
+      </ul>
+      <ul class="slider">
+         <li><img src="https://placehold.co/100x70/9AC5F4/white?text=img1" alt="img1"></li>
+         <li><img src="https://placehold.co/100x70/F266AB/white?text=img2" alt="img2"></li>
+         <li><img src="https://placehold.co/100x70/A459D1/white?text=img3" alt="img3"></li>
+         <li><img src="https://placehold.co/100x70/FFEEBB/white?text=img4" alt="img4"></li>
+      </ul>
+   </div>
+
+
+   <script>
+      /*  $('.btn_group li').eq(0).on('click', () => {
+          $('.slider').animate({ marginLeft: 0 }, 300);
+       });
+       $('.btn_group li').eq(1).on('click', () => {
+          $('.slider').animate({ marginLeft: '-70vw' }, 300);
+       });
+       $('.btn_group li').eq(2).on('click', () => {
+          $('.slider').animate({ marginLeft: '-140vw' }, 300);
+       }); */
+
+
+      $('.btn_group li').on('click', (e) => {
+         let idx = $(e.target).index();// 인덱스 값을 가져오거나 리턴
+         $('.slider').animate({ marginLeft: -70 * idx + 'vw' }, 300);
+      });
+
+
+
+
+
+
+   </script>
+</body>
+
+</html>

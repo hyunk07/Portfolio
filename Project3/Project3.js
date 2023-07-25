@@ -1,13 +1,14 @@
 // 화살버튼클릭
-  //왼쪽 버튼, 이전버튼
-  $('.btn_group li:first-child').on('click', () => {
-    $('.gallery li').last().prependTo('.gallery ');
+//왼쪽 버튼, 이전버튼
+$(".left_arrow").on("click", () => {
+   $(".slidItem").last().prependTo(".slideWrapper");
  });
-
+ 
  //오른쪽 버튼, 다음버튼
- $('.btn_group li').last().on('click', () => {
-    $('.gallery li').first().appendTo('.gallery');
- });
+ $(".right_arrow").on("click", () => {
+     $(".slidItem").first().appendTo(".slideWrapper");
+   });
+
 
 //  원형버튼클릭
 let currentIdx = 0;
@@ -40,10 +41,61 @@ const autoSlide = () => {
 
 
 
-let mainSlide = setInterval(autoSlide, 3000);
+let mainSlide = setInterval(autoSlide, 4000);
 
 $('.info_right').hover(function () {
    clearInterval(mainSlide);
 }, function () {
    mainSlide = setInterval(autoSlide, 3000);
 });
+
+
+// -----------------------
+
+// 화살버튼클릭
+//왼쪽 버튼, 이전버튼
+$("docent_left_arrow").on("click", () => {
+   $(".slidItem").last().prependTo(".gallery");
+ });
+ 
+ //오른쪽 버튼, 다음버튼
+ $(".docent_right_arrow") .last().on("click", () => {
+     $(".slidItem").first().appendTo(".gallery");
+   });
+
+/* ------------------ */
+let i = 0;
+function nextSlide() {
+   i++;
+
+   //i의 숫자가 슬라이드 이미지가 가진 숫자보다 커지면
+   if (i >= $('.slideWrapper .slidItem').length) {
+      i = 0; //다시 인덱스 번호 0으로 돌아와 처음 이미지가 보이게
+   }
+
+}
+$('#nextBtn').on('click', nextSlide);
+
+
+
+/* prevSlide */
+function prevSlide() {
+   i--;
+   if (i < 0) {
+      i = $('.slideWrapper .slidItem').length - 1;
+   }
+
+}
+$('#prevBtn').on('click', prevSlide);
+
+
+
+
+
+
+setInterval(nextSlide, 3000);
+
+
+
+
+/* ------------------ */

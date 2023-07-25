@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "HSBombaram";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/AnyConv.com__HSBombaram.woff) format("woff2");
+}
+@font-face {
+  font-family: "ChosunilboNM";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/ChosunilboNM.woff) format("woff2");
+}
+@font-face {
+  font-family: "MuseumClassic";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/AnyConv.com__MuseumClassicL.woff) format("woff2");
+}
+@font-face {
+  font-family: "MuseumClassic";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(../fonts/AnyConv.com__MuseumClassicM.woff) format("woff2");
+}
+@font-face {
+  font-family: "MuseumClassic";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../fonts/AnyConv.com__MuseumClassicB.woff) format("woff2");
+}

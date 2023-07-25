@@ -1,0 +1,406 @@
+/* 애니메이션 */
+.word {
+  display: flex;
+  grid-column: 2;
+  grid-row: auto;
+  font-size: calc(20px + 2vw);
+}
+.word span {
+  display: inline-block;
+}
+.title {
+  grid-template-columns: auto;
+  grid-template-rows: repeat(3, max-content);
+  overflow: hidden;
+  max-height: calc(20px + 2vw);
+  margin: 40px 0;
+}
+@keyframes can {
+  0% {
+    transform: translateY(0);
+  }
+  26.6666666667% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  33.3333333333% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  33.3343333333% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  33.3363333333% {
+    transform: translateY(100%);
+    opacity: 1;
+  }
+  93.3333333333% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes will {
+  0% {
+    transform: translateY(0);
+  }
+  26.6666666667% {
+    transform: translateY(0);
+  }
+  33.3333333333% {
+    transform: translateY(-100%);
+  }
+  60% {
+    transform: translateY(-100%);
+    opacity: 1;
+  }
+  66.6666666667% {
+    transform: translateY(-200%);
+    opacity: 0;
+  }
+  66.6676666667% {
+    transform: translateY(0);
+  }
+  66.6696666667% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes thrive {
+  0% {
+    transform: translateY(-300%);
+  }
+  0.0001% {
+    transform: translateY(0);
+  }
+  26.6666666667% {
+    transform: translateY(0);
+  }
+  33.3333333333% {
+    transform: translateY(-100%);
+  }
+  60% {
+    transform: translateY(-100%);
+  }
+  66.6666666667% {
+    transform: translateY(-200%);
+  }
+  93.3333333333% {
+    transform: translateY(-200%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-300%);
+    opacity: 0;
+  }
+}
+
+.can span:nth-child(1) {
+  animation: can 10s ease-in-out both 0.05s infinite;
+}
+
+.will span:nth-child(1) {
+  animation: will 10s ease-in-out both 0.05s infinite;
+}
+
+.thrive span:nth-child(1) {
+  animation: thrive 10s ease-in-out both 0.05s infinite;
+}
+
+.can span:nth-child(2) {
+  animation: can 10s ease-in-out both 0.1s infinite;
+}
+
+.will span:nth-child(2) {
+  animation: will 10s ease-in-out both 0.1s infinite;
+}
+
+.thrive span:nth-child(2) {
+  animation: thrive 10s ease-in-out both 0.1s infinite;
+}
+
+.can span:nth-child(3) {
+  animation: can 10s ease-in-out both 0.15s infinite;
+}
+
+.will span:nth-child(3) {
+  animation: will 10s ease-in-out both 0.15s infinite;
+}
+
+.thrive span:nth-child(3) {
+  animation: thrive 10s ease-in-out both 0.15s infinite;
+}
+
+.can span:nth-child(4) {
+  animation: can 10s ease-in-out both 0.2s infinite;
+}
+
+.will span:nth-child(4) {
+  animation: will 10s ease-in-out both 0.2s infinite;
+}
+
+.thrive span:nth-child(4) {
+  animation: thrive 10s ease-in-out both 0.2s infinite;
+}
+
+.can span:nth-child(5) {
+  animation: can 10s ease-in-out both 0.25s infinite;
+}
+
+.will span:nth-child(5) {
+  animation: will 10s ease-in-out both 0.25s infinite;
+}
+
+.thrive span:nth-child(5) {
+  animation: thrive 10s ease-in-out both 0.25s infinite;
+}
+
+.can span:nth-child(6) {
+  animation: can 10s ease-in-out both 0.3s infinite;
+}
+
+.will span:nth-child(6) {
+  animation: will 10s ease-in-out both 0.3s infinite;
+}
+
+.thrive span:nth-child(6) {
+  animation: thrive 10s ease-in-out both 0.3s infinite;
+}
+.can span:nth-child(7) {
+  animation: can 10s ease-in-out both 0.35s infinite;
+}
+
+.will span:nth-child(7) {
+  animation: will 10s ease-in-out both 0.35s infinite;
+}
+
+.thrive span:nth-child(7) {
+  animation: thrive 10s ease-in-out both 0.35s infinite;
+}
+.can span:nth-child(8) {
+  animation: can 10s ease-in-out both 0.4s infinite;
+}
+
+.will span:nth-child(8) {
+  animation: will 10s ease-in-out both 0.4s infinite;
+}
+
+.thrive span:nth-child(8) {
+  animation: thrive 10s ease-in-out both 0.4s infinite;
+}
+
+/* 슬라이드1 */
+
+.info_right {
+  width: 90%;
+  height: calc(25vh + 90vw);
+  position: relative;
+  overflow: hidden;
+}
+.info_slide {
+  height: 100%;
+}
+.info_right .slideWrapper {
+  width: 300%;
+  height: 100%;
+  display: flex;
+}
+
+.info_right .slideBtn {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  text-indent: -999pc;
+}
+
+.info_right .slideBtn li {
+  width: 10px;
+  height: 10px;
+  background-color: #ddd;
+  border-radius: 50%;
+}
+
+.info_right .slideBtn li.active {
+  background-color: #363636;
+}
+
+.info_right .slideWrapper .slidItem {
+  /* text-indent: -9999px; */
+  width: 100%;
+  height: 100%;
+  background: no-repeat 50% / cover;
+  transition: 0.4s;
+  text-indent: -999pc;
+  /* opacity: 0; */
+}
+.info_right {
+  position: relative;
+}
+/* 화살 */
+.info_right .btn_arrow {
+  width: 101%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* 이미지 */
+.info_right .slideWrapper #bg1 {
+  background: url(./images/main_mo.jpg) no-repeat 50% / cover;
+}
+
+.info_right .slideWrapper #bg2 {
+  background: url(./images/main_night.jpg) no-repeat 50% / cover;
+}
+
+.info_right .slideWrapper #bg3 {
+  background: url(./images/main_map.png) no-repeat 50% / contain;
+}
+/* 슬라이드2 */
+
+.exhibi_left {
+  width: 90%;
+  height: calc(25vh + 90vw);
+  position: relative;
+  overflow: hidden;
+}
+
+.exhibi_left .slideWrapper {
+  width: 300%;
+  height: 100%;
+  display: flex;
+}
+
+.exhibi_left .slideBtn {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  text-indent: -999pc;
+}
+
+.exhibi_left .slideBtn li {
+  width: 10px;
+  height: 10px;
+  background-color: #ddd;
+  border-radius: 50%;
+}
+
+.exhibi_left .slideBtn li.active {
+  background-color: #363636;
+}
+
+.exhibi_left .slideWrapper .slidItem {
+  /* text-indent: -9999px; */
+  width: 100%;
+  height: 100%;
+  background: no-repeat 50% / cover;
+  transition: 0.4s;
+  text-indent: -999pc;
+  /* opacity: 0; */
+}
+.exhibi_left {
+  position: relative;
+}
+/* 화살 */
+.btn_arrow {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* 이미지 */
+.exhibi_left .slideWrapper #bg1 {
+  background: url(./images/main_mo.jpg) no-repeat 50% / cover;
+}
+
+.exhibi_left .slideWrapper #bg2 {
+  background: url(./images/main_night.jpg) no-repeat 50% / cover;
+}
+
+.exhibi_left .slideWrapper #bg3 {
+  background: url(./images/main_map.png) no-repeat 50% / contain;
+}
+/* -------docent 슬라이드------- */
+.docent_slide {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+.docent_right {
+  background: #f8f7f6;
+  width: 100%;
+  height: calc(25vh + 90vw);
+  position: relative;
+  overflow: hidden;
+}
+
+.docent_right .gallery {
+  width: 300%;
+  height: 100%;
+  display: flex;
+}
+
+.docent_right .gallery .slidItem {
+  /* text-indent: -9999px; */
+  width: 100%;
+  height: 100%;
+  background: no-repeat 50% / cover;
+  transition: 0.4s;
+  text-indent: -999pc;
+  /* opacity: 0; */
+}
+.docent_right {
+  position: relative;
+}
+/* 화살 */
+.docent_right .btn_arrow {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* 이미지 */
+.docent_right .gallery #bg1 {
+  background: url(./images/docent1.png) no-repeat 50% / contain;
+}
+
+.docent_right .gallery #bg2 {
+  background: url(./images/docent2.png) no-repeat 50% / contain;
+}
+
+.docent_right .gallery #bg3 {
+  background: url(./images/docent3.png) no-repeat 50% / contain;
+}
