@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <!-- Demo styles -->
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .mySwiper1 {
+            background-color: #ddd;
+            height: 80vh;
+            overflow: hidden;
+        }
+
+        .mySwiper1 .swiper-slide {
+            background: no-repeat 50% / cover;
+        }
+
+        .mySwiper1 .bg1 {
+            background-image: url(https://placehold.co/1000x500/6527BE/000?text=bg1);
+        }
+
+        .mySwiper1 .bg2 {
+            background-image: url(https://placehold.co/1000x500/9681EB/000?text=bg2);
+        }
+
+        .mySwiper1 .bg3 {
+            background-image: url(https://placehold.co/1000x500/45CFDD/000?text=bg3);
+        }
+
+        .mySwiper1 .bg4 {
+            background-image: url(https://placehold.co/1000x500/A7EDE7/000?text=bg4);
+        }
+
+        .mySwiper1 .bg5 {
+            background-image: url(https://placehold.co/1000x500/98EECC/000?text=bg5);
+        }
+
+        .mySwiper2 {
+            background-color: #ddd;
+            width: 80vw;
+            margin: 100px auto;
+            height: 60vh;
+            overflow: hidden;
+        }
+
+        .mySwiper2 img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        html,
+        body {
+            position: relative;
+            height: 60vh;
+        }
+
+        .hanok_wrap {
+            position: relative;
+            height: 100%;
+        }
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 500px;
+        }
+
+
+        .mySwiper .swiper-slide {
+            background: no-repeat 50% / cover;
+        }
+
+        .mySwiper .bg1 {
+            background-image: url(./images/sumit1.png);
+        }
+
+        .mySwiper .bg2 {
+            background-image: url(./images/sumit2.jpg);
+        }
+
+        .mySwiper .bg3 {
+            background-image: url(./images/sumit3.jpeg);
+        }
+
+        .mySwiper .bg4 {
+            background-image: url(./images/sumit4.png);
+        }
+
+        .mySwiper .bg5 {
+            background-image: url(./images/sumit5.png);
+        }
+
+        .mySwiper .bg6 {
+            background-image: url(./images/sumit6.png);
+        }
+
+        .mySwiper .bg7 {
+            background-image: url(./images/sumit7.png);
+        }
+
+        .mySwiper .bg8 {
+            background-image: url(./images/sumit8.png);
+        }
+
+        .slidItemtxt {
+            text-align: left;
+            width: 100%;
+            height: 100%;
+            background-color: #000000b4;
+            /* opacity: 0; */
+            opacity: 1;
+            transition: .3s;
+        }
+
+        .slidItemtxt:hover {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="swiper mySwiper1">
+        <!-- .swiper-wrapper  -->
+        <div class="swiper-wrapper">
+            <div class="swiper-slide bg1">Slide 1</div>
+            <div class="swiper-slide bg2">Slide 2</div>
+            <div class="swiper-slide bg3">Slide 3</div>
+            <div class="swiper-slide bg4">Slide 4</div>
+            <div class="swiper-slide bg5">Slide 5</div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <!-- Swiper참가 -->
+    <div class="hanok_wrap">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide bg1">
+                    <div class="slidItemtxt">
+                        <div>목요일</div>
+                        <div>22.222</div>
+                        <div>11세리상</div>
+                        <div>잠자리</div>
+                        <div>6번</div>
+                        <div>자세히보기</div>
+                    </div>
+                </div>
+                <div class="swiper-slide bg2"></div>
+                <div class="swiper-slide bg3"></div>
+                <div class="swiper-slide bg4"></div>
+                <div class="swiper-slide bg5"></div>
+                <div class="swiper-slide bg6"></div>
+                <div class="swiper-slide bg7"></div>
+                <div class="swiper-slide bg8"></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        const mySwiper1 = new Swiper('.mySwiper1', {
+            // direction: 'vertical', 세로 방향 슬라이드
+            loop: true,// 무한 반복
+
+            pagination: {// 하단 페이지네이션
+                el: '.swiper-pagination',
+                clickable: true,
+                dynamicBullets: true
+            },
+
+            navigation: {// 좌 우 화살표
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            }
+        });
+
+
+
+
+
+
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 4,
+            spaceBetween: 30,
+            centeredSlides: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+</body>
+
+</html>

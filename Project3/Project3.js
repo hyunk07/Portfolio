@@ -81,16 +81,38 @@ const mySwiper1 = new Swiper(".mySwiper1", {
   },
 });
 /* ----------docent---------- */
-const mySwiper2 = new Swiper(".mySwiper2", {
-  loop: true,
-  pagination: {
-    // 하단 페이지네이션
-    el: ".mySwiper2 .swiper-pagination",
-    clickable: true,
-  },
-  centeredSlides: true,
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
+// const mySwiper2 = new Swiper(".mySwiper2", {
+//   loop: true,
+//   pagination: {
+//     // 하단 페이지네이션
+//     el: ".mySwiper2 .swiper-pagination",
+//     clickable: true,
+//   },
+//   centeredSlides: true,
+//   autoplay: {
+//     delay: 2500,
+//     disableOnInteraction: false,
+//   },
+// });
+/*  */
+
+var mySwiper = new Swiper(".mySwiper", {
+   
+   slidesPerView: 1,
+   // spaceBetween: 10,
+   breakpoints:{
+      640: {
+    slidesPerView: 4,
+    spaceBetween: 30}},
+   centeredSlides: true,
+   pagination: {
+       el: ".mySwiper.swiper-pagination",
+       clickable: true,
+   },
+   navigation: {
+       nextEl: ".swiper-button-next",
+       prevEl: ".swiper-button-prev",
+   },
 });
+
+

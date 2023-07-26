@@ -5,7 +5,8 @@ html {
     "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif;
 
   /*HSBombaram , MuseumClassic */
-
+}
+body {
   line-height: 1.5;
   letter-spacing: 1px;
 }
@@ -77,6 +78,7 @@ section {
 }
 .txt_wrap .word {
   font-family: "HSBombaram";
+  line-height: normal;
 }
 .txt_wrap h3 {
   font-size: calc(13px + 1vw);
@@ -138,10 +140,17 @@ section {
   width: 50%;
 }
 .btn_more a {
-  padding: 10px 38px;
+  display: block;
+  min-width: 200px;
   border-radius: 30px;
   background: #ffbf1f;
   color: #fff;
+
+  text-align: center;
+
+  padding: 1rem 3rem;
+  letter-spacing: 5px;
+  font-weight: 700;
 }
 /* exhibition */
 
@@ -218,12 +227,37 @@ section {
   border-top: 1px solid #000;
   border-bottom: 1px solid #000;
   padding: calc(20px + 1vw) 0;
-  justify-content: space-between;
 }
+.docent_txt .docent_plus {
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='27' viewBox='0 0 24 27' fill='none'%3E%3Cpath d='M22 14.8564L13.4142 23.4422C12.6332 24.2233 11.3668 24.2233 10.5858 23.4422L2 14.8564' stroke='black' stroke-width='2'/%3E%3Cpath d='M12 24.1429V2' stroke='black' stroke-width='2'/%3E%3C/svg%3E")
+    no-repeat 97% 50% / 4%;
+}
+/* hanok_container */
+.hanok_container {
+  width: 100%;
+  height: 100vh;
+}
+/* .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
 /* -----sumit----- */
 .sumit_wrap {
   width: 90%;
   margin: 0 auto;
+
+  padding: 1.625rem 1.8125rem;
+  letter-spacing: 0.1em;
+  line-height: 19px;
 }
 .sumit_wrap input {
   width: 100%;
@@ -231,6 +265,13 @@ section {
   border-radius: 10px;
   padding: 20px;
   margin-bottom: 3vw;
+
+  font-size: 15px;
+  color: #000;
+  font-weight: 500;
+}
+input::placeholder {
+  color: #000;
 }
 .sumit_wrap .dropdown {
   border: #000 2px solid;
@@ -239,4 +280,124 @@ section {
   padding: 20px;
   margin-bottom: 3vw;
   width: 100%;
+
+  font-size: 15px;
+  color: #000;
+
+  -webkit-appearance: none;
+}
+select {
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='27' viewBox='0 0 24 27' fill='none'%3E%3Cpath d='M22 14.8564L13.4142 23.4422C12.6332 24.2233 11.3668 24.2233 10.5858 23.4422L2 14.8564' stroke='black' stroke-width='2'/%3E%3Cpath d='M12 24.1429V2' stroke='black' stroke-width='2'/%3E%3C/svg%3E")
+    no-repeat 97% 50% / 5%;
+}
+.radio_box .flex {
+  gap: 3vw;
+}
+.radio_box .btn_more {
+  margin: 30px auto;
+}
+.radio_box input {
+  width: auto;
+}
+.radio_box span {
+  font-size: 14px;
+  color: #000;
+}
+/* ROUNDED ONE */
+.mx-checkbox {
+  display: none;
+  pointer-events: none;
+}
+.mx-checkbox + label:before {
+  content: "";
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  background-color: whitesmoke;
+  border: 2px solid darkgray;
+  margin-right: 5px;
+  margin-left: 0px;
+  transition: all 0.8s ease;
+  margin-bottom: 0px;
+}
+.mx-checkbox:checked + label:before {
+  background-color: darkgray;
+  border: 2px solid lightgray;
+}
+.mx-checkbox-rounded + label:before {
+  border-radius: 10px;
+}
+.mx-checkbox-dark + label:before {
+  background-color: darkgray;
+  border: 2px solid whitesmoke;
+}
+.mx-checkbox-dark:checked + label:before {
+  background-color: red;
+}
+.dark {
+  background-color: black;
+  color: whitesmoke;
+  padding: 20px 0;
+}
+.checkbox-elm {
+  height: 60px;
+}
+/* footer */
+.footer_container {
+  background-color: #ffffff;
+}
+footer {
+  position: relative;
+  color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  font-family: "HSBombaram";
+  line-height: 2.5;
+}
+.footop {
+  width: 100%;
+  height: 60px;
+  background: url(./images/alline.png) no-repeat 50% / 100%;
+  position: absolute;
+  top: -30px;
+}
+.foot_logo {
+  width: 50%;
+  height: 80px;
+  background: url(./images/logo_b.png) no-repeat 50% / 100%;
+  margin: 0 auto 7vw;
+  transition: 0.3s;
+}
+.foot_logo:hover {
+  background: url(./images/logo.png) no-repeat 50% / 100%;
+}
+.foot_box {
+  padding: 10vw 0;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.foot_box ul li:nth-child(even) {
+  display: none;
+}
+.foot_box ul {
+  flex-direction: column;
+  font-size: 1.5rem;
+}
+.foot_box ul li {
+  transition: 0.3s;
+}
+.foot_box ul li:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
+.btn_go {
+  margin: 30px;
+}
+.btn_go a {
+  padding: 10px 15px;
+  border: #000 1px solid;
+  transition: 0.5s;
+}
+.btn_go a:hover {
+  color: #fff;
+  background-color: #000;
+  border-radius: 30px;
 }

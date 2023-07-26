@@ -13,7 +13,7 @@
   <!-- <link rel="manifest" href="../common/favicon.ioc/GRANHAND/site.webmanifest" />  -->
   <!-- css -->
   <link rel="stylesheet" href="../common/style/reset.css" />
-    <!-- swiper css -->
+  <!-- swiper css -->
   <link rel="stylesheet" href="./swiper-bundle.min.css" />
 
   <link rel="stylesheet" href="./slide.css" />
@@ -177,19 +177,19 @@
       <h1>전시안내</h1>
       <div class="exhibi_wrap grid">
         <div class="exhibi_left">
-         <div class="swiper mySwiper1">
-    <!-- .swiper-wrapper 슬라이드 이미지 영역 -->
-    <div class="swiper-wrapper">
-      <!-- .swiper-slide 개별 이미지 -->
-      <div class="swiper-slide bg1">Slide 1</div>
-      <div class="swiper-slide bg2">Slide 2</div>
-      <div class="swiper-slide bg3">Slide 3</div>
-    </div>
-    <!-- 추가 옵션: 좌우 버튼 -->
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-  </div>
-</div>
+          <div class="swiper mySwiper1">
+            <!-- .swiper-wrapper 슬라이드 이미지 영역 -->
+            <div class="swiper-wrapper">
+              <!-- .swiper-slide 개별 이미지 -->
+              <div class="swiper-slide bg1">Slide 1</div>
+              <div class="swiper-slide bg2">Slide 2</div>
+              <div class="swiper-slide bg3">Slide 3</div>
+            </div>
+            <!-- 추가 옵션: 좌우 버튼 -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
         <div class="exhibi_right">
           <div class="exhibi_txt">
             <h2>기억 전당포 : 1990 서울 나들이 展</h2>
@@ -216,25 +216,13 @@
               있는 투어로 여러분들을 초대합니다</p>
             <div class="docent_plus flex">
               <p>주요일정</p>
-              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
-                <g clip-path="url(#clip0_30_82)">
-                  <path d="M12.0625 7.11133L7.94546 11.2284C7.16441 12.0095 5.89808 12.0095 5.11704 11.2284L1 7.11133"
-                    stroke="black" stroke-width="2" />
-                  <path d="M6.53125 12.2478V0" stroke="black" stroke-width="2" />
-                </g>
-                <defs>
-                  <clipPath id="clip0_30_82">
-                    <rect width="13" height="13" fill="white" />
-                  </clipPath>
-                </defs>
-              </svg>
             </div>
             <div class="btn_more"><a href="#">사전예약하기 </a></div>
           </div>
         </div>
         <div class="docent_right">
           <div class="swiper mySwiper2">
-           
+
           </div>
 
         </div>
@@ -246,8 +234,31 @@
   <section>
     <div class="hanok_container">
       <h1>한옥예술체험</h1>
-      <div class="hanok_wrap grid">
-
+      <div class="hanok_wrap">
+        <!-- Swiper참가 -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide bg1">
+              <div class="slidItemtxt">
+                <div>목요일</div>
+                <div>22.222</div>
+                <div>11세리상</div>
+                <div>잠자리</div>
+                <div>6번</div>
+                <div>자세히보기</div>
+              </div>
+            </div>
+            <div class="swiper-slide bg2"></div>
+            <div class="swiper-slide bg3"></div>
+            <div class="swiper-slide bg4"></div>
+            <div class="swiper-slide bg5"></div>
+            <div class="swiper-slide bg6"></div>
+            <div class="swiper-slide bg7"></div>
+            <div class="swiper-slide bg8"></div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
       </div>
     </div>
   </section>
@@ -257,49 +268,67 @@
       <h1>체험사전예약하기</h1>
       <form class="sumit_wrap ">
         <input type="text" name="userName" placeholder="신청자이름">
-        <!-- <input type="text" name="number " placeholder="인원수"> -->
+
         <select id="num_dropdown" class="dropdown">
           <option value="optionOne">인원수</option>
-          <option value="optionTwo">Option Two</option>
-          <option value="optionThree">Option Three</option>
-          <option value="optionFour">Option Four</option>
-          <option value="optionFive">Option Five</option>
+          <option value="optionTwo">1인</option>
+          <option value="optionThree">2인</option>
+          <option value="optionFour">3인</option>
+          <option value="optionFive">4인</option>
         </select>
         <input type="text" name="useremail" placeholder="EMAIL*">
         <input type="text" name="userphone" placeholder="PHONE">
-        <!-- <input type="text" name="division" placeholder="모집구분"> -->
 
-        <select id="divi_dropdown" class="dropdown">
+        <select id="divi_dropdown" class="dropdown" aria-invalid="true">
           <option value="optionOne">모집구분</option>
-          <option value="optionTwo">Option Two</option>
-          <option value="optionThree">Option Three</option>
-          <option value="optionFour">Option Four</option>
-          <option value="optionFive">Option Five</option>
+          <option value="optionTwo">가야금 원데이 클래스 </option>
+          <option value="optionThree">생쪽매듭 꽃팔찌 만들기</option>
+          <option value="optionFive">실크스크린 족자 만들기</option>
+          <option value="optionFour">보자기 포장과 미니 마그넷 만들기</option>
+          <option value="optionFour">양말목 드림케쳐 만들기</option>
+          <option value="optionFour">자개 그립톡/키링 만들기기</option>
+          <option value="optionFour">전통 노리개 만들기</option>
+          <option value="optionFour">나만의 뒤꽂이 만들기</option>
         </select>
+
         <input type="text" name="message" placeholder="메세지또는 문의를 남겨주세요">
+        <div class="radio_box" id="checkbox">
+          <div class="check-box-styles ">
+            <input type="checkbox" id="elm-3" class="mx-checkbox mx-checkbox-rounded ">
+            <label for="elm-3">개인 정보 보호 정책 동의합니다</label>
+
+          </div>
+          <div class="btn_more"><a href="#">제출하기</a></div>
+        </div>
 
       </form>
     </div>
   </section>
   <footer>
-    <div class="footer_container"></div>
-    <div class="footop"></div>
-    <ul class="flex">
-      <li>새소식</li>
-      <li>•</li>
-      <li>마을매거진</li>
-      <li>•</li>
-      <li>편익시설안내</li>
-    </ul>
-    <ul class="flex">
-      <li>묻고 답하기</li>
-      <li>•</li>
-      <li>언론보도</li>
-      <li>•</li>
-      <li>정보공개</li>
-    </ul>
-    <h3>인스타그램</h3>
-    <div class="btn_go"><a href="./">포토폴리오 바로가기</a></div>
+    <div class="footer_container">
+      <div class="footop"></div>
+      <div class="foot_box  flex">
+        <div class="foot_logo"></div>
+        <ul class="flex">
+          <li><a href="#">새소식</a></li>
+          <li>•</li>
+          <li><a href="#">마을매거진</a></li>
+          <li>•</li>
+          <li><a href="#">편익시설안내</a></li>
+        </ul>
+        <ul class="flex">
+          <li><a href="#">묻고 답하기</a></li>
+          <li>•</li>
+          <li><a href="#">언론보도</a></li>
+          <li>•</li>
+          <li><a href="#">정보공개</a></li>
+        </ul>
+        <h3><a href="#">인스타그램</a></h3>
+        <div class="btn_go"><a href="../">포토폴리오 바로가기</a></div>
+      </div>
+    </div>
+
+
   </footer>
 </body>
 

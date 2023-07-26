@@ -1,0 +1,11 @@
+@charset 'utf-8';
+
+body {
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  font-family: "Geologica", "나눔고딕", serif;
+  font-weight: 200;
+}
+#main-slide {
+  --swiper-theme-color: #fff;
+}
