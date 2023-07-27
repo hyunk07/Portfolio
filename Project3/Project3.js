@@ -76,8 +76,8 @@ const mySwiper1 = new Swiper(".mySwiper1", {
 
   navigation: {
     // 좌 우 화살표
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".mySwiper1 .swiper-button-next",
+    prevEl: ".mySwiper1 .swiper-button-prev",
   },
 });
 /* ----------docent---------- */
@@ -94,25 +94,28 @@ const mySwiper1 = new Swiper(".mySwiper1", {
 //     disableOnInteraction: false,
 //   },
 // });
-/*  */
 
-var mySwiper = new Swiper(".mySwiper", {
-   
-   slidesPerView: 1,
-   // spaceBetween: 10,
+
+
+var mySwiper2 = new Swiper(".mySwiper2", {
+ loop: true,
+  navigation: {
+    nextEl: ".mySwiper2 .swiper-button-next",
+    prevEl: ".mySwiper2 .swiper-button-prev",
+  },
+});
+/* ------hanok------ */
+var swiper3 = new Swiper(".mySwiper3", {
+  slidesPerView: 1,
+   spaceBetween: 10,
    breakpoints:{
-      640: {
+      500: {
     slidesPerView: 4,
     spaceBetween: 30}},
-   centeredSlides: true,
-   pagination: {
-       el: ".mySwiper.swiper-pagination",
-       clickable: true,
-   },
-   navigation: {
-       nextEl: ".swiper-button-next",
-       prevEl: ".swiper-button-prev",
-   },
+  centeredSlides: true,
+  navigation: {
+    nextEl: ".mySwiper3 .swiper-button-next",
+    prevEl: ".mySwiper3 .swiper-button-prev",
+},
 });
-
 

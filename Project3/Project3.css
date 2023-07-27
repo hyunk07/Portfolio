@@ -1,9 +1,9 @@
 @charset 'utf-8';
 html {
   background-color: #f8f7f6;
-  font-family: "ChosunilboNM", -apple-system, BlinkMacSystemFont,
+  font-family: "pretendardvariable", -apple-system, BlinkMacSystemFont,
     "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif;
-
+  overflow-x: hidden;
   /*HSBombaram , MuseumClassic */
 }
 body {
@@ -23,23 +23,22 @@ span {
 h1 {
   font-family: "HSBombaram";
   text-align: center;
-  margin-bottom: 10vw;
+  margin: 10vw;
   font-size: calc(25px + 1vw);
 }
 h2 {
   font-family: "HSBombaram";
 }
+.info_box {
+  font-size: 14px;
+}
 .info_txt h2,
 .exhibi_txt h2 {
-  font-size: calc(20px + 1vw);
+  font-size: 20px;
   margin: 5vw 0 10vw;
 }
 .info_txt p,
 .exhibi_txt p {
-  font-size: calc(14px + 1vw);
-}
-section {
-  margin: 7vh 0;
 }
 /* -------main------- */
 .main_container {
@@ -118,26 +117,42 @@ section {
   margin-top: 7vw;
 }
 
-.info_txt .info_box {
+.info_box {
   /* font-family: "MuseumClassic"; */
   font-weight: 400;
   margin: 10vw 0;
+  justify-content: center;
 }
-.info_txt .info_box h2 {
-  font-size: calc(16px + 1vw);
+.info_box h2 {
+  font-size: 16px;
   margin-bottom: 3vw;
   font-family: "MuseumClassic";
   font-weight: 700;
 }
-/* .info_txt .info_box p {
+/*  .info_box p {
   width: 50%;
   margin: 0 auto;
 } */
-.info_txt .info_box .local {
+.info_box .local {
   width: 50%;
 }
-.info_txt .info_box .hour {
+.info_box .local p {
+  width: 95%;
+}
+
+.info_box .hour {
   width: 50%;
+  position: relative;
+}
+.hour::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 100%;
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .btn_more a {
   display: block;
@@ -161,6 +176,7 @@ section {
   width: 100%;
   background-color: #efe8df;
   flex-flow: column-reverse;
+  border-radius: 20px;
 }
 .exhibi_left,
 .exhibi_right {
@@ -170,8 +186,13 @@ section {
   border-radius: 20px;
 }
 .exhibi_left {
+  background-color: #fff;
+  text-align: center;
   position: relative;
   overflow: hidden;
+}
+.exhibi_right {
+  align-items: center;
 }
 .exhibi_txt {
   width: 90%;
@@ -180,6 +201,7 @@ section {
 .exhibi_txt p {
   line-height: 1.5;
   letter-spacing: 1px;
+  margin-bottom: 5vh;
 }
 /* -----docent----- */
 .docent_container {
@@ -202,7 +224,7 @@ section {
 }
 .docent_right,
 .docent_left {
-  margin: 0 auto;
+  margin: 05vh auto;
   height: 70vh;
 }
 .docent_left {
@@ -235,20 +257,8 @@ section {
 /* hanok_container */
 .hanok_container {
   width: 100%;
-  height: 100vh;
+  margin-bottom: 15vh;
 }
-/* .swiper {
-  width: 100%;
-  height: 100%;
-}
-
-.swiper-slide {
-  width: 30%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
 
 /* -----sumit----- */
 .sumit_wrap {
@@ -360,15 +370,14 @@ footer {
   position: absolute;
   top: -30px;
 }
+
 .foot_logo {
-  width: 50%;
-  height: 80px;
-  background: url(./images/logo_b.png) no-repeat 50% / 100%;
   margin: 0 auto 7vw;
+  width: 50%;
   transition: 0.3s;
 }
 .foot_logo:hover {
-  background: url(./images/logo.png) no-repeat 50% / 100%;
+  opacity: 0.6;
 }
 .foot_box {
   padding: 10vw 0;
@@ -385,7 +394,7 @@ footer {
 .foot_box ul li {
   transition: 0.3s;
 }
-.foot_box ul li:hover {
+.foot_box ul li a:hover {
   color: rgba(0, 0, 0, 0.5);
 }
 .btn_go {

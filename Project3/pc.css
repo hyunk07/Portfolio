@@ -1,1 +1,126 @@
 @charset 'utf-8';
+
+.btn_more a {
+  max-width: 300px;
+  margin: 0 auto;
+  font-size: 16px;
+}
+.txt_wrap h3 {
+  font-size: 16px;
+  margin: 0 auto;
+}
+.txt_wrap h3 span {
+  display: inline-block;
+}
+.info_wrap,
+.exhibi_wrap,
+.docent_wrap {
+  flex-direction: row;
+}
+
+/* -----info----- */
+.info_left,
+.info_right {
+  height: 95vh;
+  margin: 0;
+}
+.info_wrap {
+  padding: 0;
+}
+.info_txt {
+  width: 80%;
+  margin: 0 auto;
+}
+.info_txt h2,
+.exhibi_txt h2 {
+  font-size: 25px;
+  margin: 1vw 0;
+}
+.info_txt p,
+.exhibi_txt p {
+  font-family: "pretendardvariable";
+  font-size: 16px;
+}
+.info_box {
+  margin: 0;
+}
+.info_box h2 {
+  /* font-size: calc(16px + 1vw); */
+  font-size: 20px;
+  margin-bottom: 3vw;
+  font-family: "MuseumClassic";
+  font-weight: 700;
+}
+/* -----exhibi----- */
+/* -----docent----- */
+
+.docent_wrap .docent_left {
+  width: 32%;
+}
+.docent_wrap .docent_right {
+  width: 67%;
+  display: block;
+}
+.docent_txt {
+  width: 77%;
+}
+.docent_txt h2 {
+  font-size: 20px;
+}
+.docent_txt > p {
+  font-size: 14px;
+  width: 90%;
+  margin: 0 auto;
+}
+.docent_txt .docent_plus {
+  font-size: 14px;
+}
+.docent_txt .btn_more a {
+  min-width: 222px;
+  max-width: 350px;
+}
+/* -----hanok----- */
+.plus {
+  display: none;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: block;
+}
+.swiper-button-prev {
+  display: block;
+  margin-right: 20px;
+}
+.swiper-button-next {
+  display: block;
+  margin-right: 40px;
+}
+/* -----sumit----- */
+.sumit_wrap {
+  display: grid;
+}
+.sumit_wrap input {
+  width: 47%;
+}
+.sumit_wrap #mes {
+  width: 100%;
+}
+#num_dropdown {
+  width: 47%;
+}
+input::placeholder {
+  color: #000;
+}
+.sumit_wrap .dropdown {
+  border: #000 2px solid;
+  border-radius: 10px;
+  padding: 20px 0;
+  padding: 20px;
+  margin-bottom: 3vw;
+  width: 100%;
+
+  font-size: 15px;
+  color: #000;
+
+  -webkit-appearance: none;
+}
