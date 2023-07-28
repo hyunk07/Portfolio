@@ -3,11 +3,25 @@
 .btn_more a {
   max-width: 300px;
   margin: 0 auto;
-  font-size: 16px;
+  font-size: calc(18px + 0.1vw);
+}
+.main_title {
+  font-size: calc(3rem + 1vw);
+}
+
+.word {
+  font-size: calc(30px + 2vw);
+}
+.title {
+  max-height: calc(30px + 2.1vw);
+}
+.txt_wrap {
+  margin: 15vw 0;
 }
 .txt_wrap h3 {
-  font-size: 16px;
-  margin: 0 auto;
+  font-size: 25px;
+  margin: 6vw auto;
+  width: 60%;
 }
 .txt_wrap h3 span {
   display: inline-block;
@@ -18,6 +32,9 @@
   flex-direction: row;
 }
 
+.info_box .local p {
+  width: 100%;
+}
 /* -----info----- */
 .info_left,
 .info_right {
@@ -33,27 +50,39 @@
 }
 .info_txt h2,
 .exhibi_txt h2 {
-  font-size: 25px;
-  margin: 1vw 0;
+  font-size: calc(35px + 0.1vw);
+  margin: 1vw 0 5vw;
 }
+
 .info_txt p,
 .exhibi_txt p {
   font-family: "pretendardvariable";
-  font-size: 16px;
+  font-size: calc(20px + 0.1vw);
 }
 .info_box {
   margin: 0;
+  font-size: calc(16px + 0.1vw);
 }
 .info_box h2 {
   /* font-size: calc(16px + 1vw); */
-  font-size: 20px;
+  font-size: calc(25px + 0.1vw);
   margin-bottom: 3vw;
   font-family: "MuseumClassic";
   font-weight: 700;
 }
 /* -----exhibi----- */
 /* -----docent----- */
-
+.docent_container {
+  text-align: center;
+}
+.docent_container h1 {
+  margin: 10vw 0 5vw 0;
+}
+.docent_container > p {
+  width: 60%;
+  font-size: calc(20px + 0.1vw);
+  margin-bottom: 10vw;
+}
 .docent_wrap .docent_left {
   width: 32%;
 }
@@ -65,15 +94,15 @@
   width: 77%;
 }
 .docent_txt h2 {
-  font-size: 20px;
+  font-size: calc(25px + 0.1vw);
 }
 .docent_txt > p {
-  font-size: 14px;
+  font-size: calc(16px + 0.1vw);
   width: 90%;
   margin: 0 auto;
 }
 .docent_txt .docent_plus {
-  font-size: 14px;
+  font-size: calc(14px + 0.1vw);
 }
 .docent_txt .btn_more a {
   min-width: 222px;
@@ -87,40 +116,96 @@
 .swiper-button-prev::after {
   display: block;
 }
-.swiper-button-prev {
+.mySwiper3 .swiper-button-prev {
   display: block;
   margin-right: 20px;
 }
-.swiper-button-next {
+.mySwiper3 .swiper-button-next {
   display: block;
   margin-right: 40px;
 }
+.news_card_content p,
+.news_card_content h2,
+.news_card_content .flex {
+  font-size: calc(18px + 0.1vw);
+}
+.news_card_content .rod {
+  margin-bottom: 50px;
+}
+.news_card_content h1 {
+  font-size: calc(27px + 0.1vw);
+  margin: 50px 0;
+}
+.news_card_content p {
+}
+.news_card_content h2 {
+  margin-bottom: 30px;
+}
+.swiper-slide .news_card:hover {
+  opacity: 1;
+}
+.news_card_content .flex {
+  margin-top: 50px;
+}
 /* -----sumit----- */
+.sumit_container {
+  padding-bottom: 10vw;
+}
 .sumit_wrap {
-  display: grid;
+  width: 60%;
 }
 .sumit_wrap input {
-  width: 47%;
+  font-size: calc(18px + 0.1vw);
+  width: 49%;
+}
+.sumit_wrap .dropdown {
+  font-size: calc(18px + 0.1vw);
+}
+#divi_dropdown {
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='27' viewBox='0 0 24 27' fill='none'%3E%3Cpath d='M22 14.8564L13.4142 23.4422C12.6332 24.2233 11.3668 24.2233 10.5858 23.4422L2 14.8564' stroke='black' stroke-width='2'/%3E%3Cpath d='M12 24.1429V2' stroke='black' stroke-width='2'/%3E%3C/svg%3E")
+    no-repeat 97% 50% / 2.5%;
 }
 .sumit_wrap #mes {
   width: 100%;
 }
 #num_dropdown {
-  width: 47%;
+  width: 49%;
 }
-input::placeholder {
-  color: #000;
+.sec,
+.fri {
+  flex-direction: row;
+  justify-content: space-between;
 }
-.sumit_wrap .dropdown {
-  border: #000 2px solid;
-  border-radius: 10px;
-  padding: 20px 0;
-  padding: 20px;
-  margin-bottom: 3vw;
-  width: 100%;
 
-  font-size: 15px;
-  color: #000;
+.mx-checkbox + label:before {
+  margin-right: 2vw;
+}
+/* -----foot----- */
 
-  -webkit-appearance: none;
+.footop {
+  height: 120px;
+  top: -60px;
+}
+.foot_logo {
+  width: 20%;
+}
+.foot_box ul li:nth-child(even) {
+  display: block;
+}
+.foot_box ul {
+  flex-direction: row;
+  justify-content: center;
+  font-size: 3rem;
+  gap: 3.2vw;
+}
+.foot_box h3 a,
+.btn_go {
+  font-size: 1.5rem;
+}
+.foot_box h3 {
+  margin-top: 4vw;
+}
+
+.foot_box {
+  padding: 10vw 0px 3vw;
 }

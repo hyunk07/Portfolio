@@ -3,7 +3,6 @@ html {
   background-color: #f8f7f6;
   font-family: "pretendardvariable", -apple-system, BlinkMacSystemFont,
     "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif;
-  overflow-x: hidden;
   /*HSBombaram , MuseumClassic */
 }
 body {
@@ -37,8 +36,153 @@ h2 {
   font-size: 20px;
   margin: 5vw 0 10vw;
 }
-.info_txt p,
-.exhibi_txt p {
+/*-------- header ---------*/
+header {
+  width: 100%;
+}
+.title_logo {
+  /* display: none; */
+}
+
+/*-- nav --*/
+header nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-size: 1.1rem;
+  z-index: 999999;
+}
+header nav .title {
+  /* background-color: #ddd; */
+  /* padding-left: 30px; */
+}
+
+header nav .title .title_logo {
+  background-color: #000;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+/*-- menu --*/
+header nav .menu_wrapper {
+  justify-content: flex-end;
+  padding-right: 30px;
+  z-index: 999999;
+}
+
+/*- 모바일 아이콘 -*/
+header nav .menu_wrapper #toggle_btn {
+  justify-content: end;
+  width: 80px;
+  height: 80px;
+
+  /* display: none; */
+  position: relative;
+}
+/* 햄버거 */
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  height: 80px;
+  width: 80px;
+}
+label {
+  background-color: #000;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  height: 7px;
+  width: 100%;
+  transition: background-color 0.2s ease-out;
+}
+#menu {
+  appearance: none;
+}
+#menu:checked + label {
+  background-color: transparent;
+}
+#menu:checked + label:before {
+  transform: rotate(135deg);
+}
+#menu:checked + label:after {
+  transform: rotate(225deg);
+}
+#menu + label:before,
+#menu + label:after {
+  content: "";
+  position: absolute;
+  background-color: #000;
+  border-radius: 0.5rem;
+  height: 7px;
+  width: 100%;
+  left: 0;
+  transition: transform 0.5s ease-in-out;
+}
+#menu + label:before {
+  transform: translateY(-20px);
+}
+#menu + label:after {
+  transform: translateY(20px);
+}
+
+header nav .menu_wrapper #global_nav li {
+  /* display: none; */
+  margin: 0 20px;
+}
+
+header nav .menu_wrapper #global_nav li a {
+  color: inherit;
+}
+/* --------핸드폰--------- */
+header nav .menu_wrapper #toggle_btn {
+  display: flex;
+}
+
+header nav .menu_wrapper #global_nav {
+  background: url(./images/1000_F_104334782_LpQ35OWS1geunQfvyHdm2IItZEipnGOy.jpg)
+    no-repeat 100% / cover;
+  /* margin: 0;
+  padding: 0; */
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+}
+header nav .menu_wrapper #global_nav menu {
+  position: relative;
+}
+header nav .menu_wrapper #global_nav menu {
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  transform: translate(-50% -50%);
+}
+header nav .menu_wrapper #global_nav li {
+  text-align: center;
+  font-family: "MuseumClassic";
+  font-size: 40px;
+  padding: 10px;
+  opacity: 0;
+}
+
+header nav .menu_wrapper #global_nav.showMenu {
+  flex-flow: column;
+  height: 100vh;
+}
+
+header nav .menu_wrapper #global_nav.showMenu li {
+  opacity: 1;
 }
 /* -------main------- */
 .main_container {
@@ -56,9 +200,8 @@ h2 {
   gap: 2.5vw;
 }
 .main_wrap .logo_img {
-  width: calc(80px + 3vw);
-  aspect-ratio: 1;
-  background: url(./images/cf118ab283001.jpeg);
+  width: calc(150px + 3vw);
+  background: url(./images/logo_box.png) no-repeat 50% / contain;
 }
 .main_title {
   font-family: "HSBombaram";
@@ -101,7 +244,7 @@ h2 {
 .info_left {
   display: flex;
   flex-flow: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 .info_right {
   background-color: #f6f5f3;
@@ -208,6 +351,7 @@ h2 {
   width: 100%;
 }
 .docent_container > p {
+  font-family: "MuseumClassic";
   width: 90%;
   margin: 0 auto;
 }
@@ -258,8 +402,13 @@ h2 {
 .hanok_container {
   width: 100%;
   margin-bottom: 15vh;
+  overflow-x: hidden;
 }
-
+.plus {
+  margin-bottom: 30px;
+  position: relative;
+  right: -60%;
+}
 /* -----sumit----- */
 .sumit_wrap {
   width: 90%;
@@ -313,7 +462,7 @@ select {
   font-size: 14px;
   color: #000;
 }
-/* ROUNDED ONE */
+/* ROUNDED */
 .mx-checkbox {
   display: none;
   pointer-events: none;
@@ -352,6 +501,10 @@ select {
 .checkbox-elm {
   height: 60px;
 }
+.sec,
+.fri {
+  flex-direction: column;
+}
 /* footer */
 .footer_container {
   background-color: #ffffff;
@@ -373,7 +526,7 @@ footer {
 
 .foot_logo {
   margin: 0 auto 7vw;
-  width: 50%;
+  width: 40%;
   transition: 0.3s;
 }
 .foot_logo:hover {
@@ -391,17 +544,23 @@ footer {
   flex-direction: column;
   font-size: 1.5rem;
 }
-.foot_box ul li {
+.foot_box ul li a {
   transition: 0.3s;
 }
 .foot_box ul li a:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
+.foot_box h3 a {
+  transition: 0.3s;
+}
+.foot_box h3 a:hover {
   color: rgba(0, 0, 0, 0.5);
 }
 .btn_go {
   margin: 30px;
 }
 .btn_go a {
-  padding: 10px 15px;
+  padding: 15px 25px;
   border: #000 1px solid;
   transition: 0.5s;
 }

@@ -28,6 +28,31 @@
 
 <body>
   <!-----------header----------->
+  <header>
+    <nav class="transit">
+      <h1 class="title flex title_logo"></h1>
+      <div class="menu_wrapper flex">
+        <!-- 모바일 메뉴 -->
+        <div id="toggle_btn" class="flex">
+          <button type="button">
+            <input type="checkbox" id="menu">
+            <label for="menu"></label>
+          </button>
+
+        </div>
+        <!-- pc 메뉴 -->
+        <div id="global_nav" class="flex transit">
+          <menu>
+            <li><a href="#">돈의문박물관소개</a></li>
+            <li><a href="#">전시•체험•교육•문화행사</a></li>
+            <li><a href="#">대관•투어•촬영</a></li>
+            <li><a href="#">돈의문마을소식</a></li>
+            <li><a href="#">프로그램예약</a></li>
+          </menu>
+          </di>
+        </div>
+    </nav>
+  </header>
   <!-- main -->
   <section>
     <div class=" main_container">
@@ -409,17 +434,21 @@
     <div class="sumit_container">
       <h1>체험사전예약하기</h1>
       <form class="sumit_wrap ">
-        <input type="text" name="userName" placeholder="신청자이름">
+        <div class="fri flex"> <input type="text" name="userName" placeholder="신청자이름">
 
-        <select id="num_dropdown" class="dropdown">
-          <option value="optionOne">인원수</option>
-          <option value="optionTwo">1인</option>
-          <option value="optionThree">2인</option>
-          <option value="optionFour">3인</option>
-          <option value="optionFive">4인</option>
-        </select>
-        <input type="text" name="useremail" placeholder="EMAIL*">
-        <input type="text" name="userphone" placeholder="PHONE">
+          <select id="num_dropdown" class="dropdown">
+            <option value="optionOne">인원수</option>
+            <option value="optionTwo">1인</option>
+            <option value="optionThree">2인</option>
+            <option value="optionFour">3인</option>
+            <option value="optionFive">4인</option>
+          </select>
+        </div>
+        <div class="sec flex">
+          <input type="text" name="useremail" placeholder="EMAIL*">
+          <input type="text" name="userphone" placeholder="PHONE">
+        </div>
+
 
         <select id="divi_dropdown" class="dropdown" aria-invalid="true">
           <option value="optionOne">모집구분</option>
