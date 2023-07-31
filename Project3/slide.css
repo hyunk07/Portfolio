@@ -427,7 +427,7 @@
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.65);
   position: relative;
-  /* opacity: 0; */
+  opacity: 0;
   transition: 0.3s;
 }
 .hanok_wrap .swiper-button-prev:after,

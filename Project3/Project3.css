@@ -37,152 +37,175 @@ h2 {
   margin: 5vw 0 10vw;
 }
 /*-------- header ---------*/
-header {
-  width: 100%;
-}
-.title_logo {
-  /* display: none; */
-}
 
-/*-- nav --*/
-header nav {
+.page-wrapper {
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  border-radius: 0 0 30px 30px;
   position: fixed;
   top: 0;
+  z-index: 999;
+  font-family: "MuseumClassic";
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.nav-wrapper {
   width: 100%;
-  height: 80px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  font-size: 1.1rem;
-  z-index: 999999;
-}
-header nav .title {
-  /* background-color: #ddd; */
-  /* padding-left: 30px; */
+  position: -webkit-sticky;
+  /* Safari */
+  position: sticky;
+  top: 0;
+  /* background-color: #fff; */
 }
 
-header nav .title .title_logo {
-  background-color: #000;
-  width: 80px;
-  height: 80px;
-  line-height: 80px;
-  text-align: center;
-  cursor: pointer;
-  margin-right: 20px;
-}
+/* NAVIGATION */
 
-/*-- menu --*/
-header nav .menu_wrapper {
-  justify-content: flex-end;
-  padding-right: 30px;
-  z-index: 999999;
-}
-
-/*- 모바일 아이콘 -*/
-header nav .menu_wrapper #toggle_btn {
-  justify-content: end;
-  width: 80px;
-  height: 80px;
-
-  /* display: none; */
-  position: relative;
-}
-/* 햄버거 */
-button {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  outline: none;
-  height: 80px;
-  width: 80px;
-}
-label {
-  background-color: #000;
-  border-radius: 0.5rem;
-  cursor: pointer;
-  display: block;
-  position: relative;
-  height: 7px;
-  width: 100%;
-  transition: background-color 0.2s ease-out;
-}
-#menu {
-  appearance: none;
-}
-#menu:checked + label {
-  background-color: transparent;
-}
-#menu:checked + label:before {
-  transform: rotate(135deg);
-}
-#menu:checked + label:after {
-  transform: rotate(225deg);
-}
-#menu + label:before,
-#menu + label:after {
-  content: "";
-  position: absolute;
-  background-color: #000;
-  border-radius: 0.5rem;
-  height: 7px;
-  width: 100%;
-  left: 0;
-  transition: transform 0.5s ease-in-out;
-}
-#menu + label:before {
-  transform: translateY(-20px);
-}
-#menu + label:after {
-  transform: translateY(20px);
-}
-
-header nav .menu_wrapper #global_nav li {
-  /* display: none; */
-  margin: 0 20px;
-}
-
-header nav .menu_wrapper #global_nav li a {
-  color: inherit;
-}
-/* --------핸드폰--------- */
-header nav .menu_wrapper #toggle_btn {
-  display: flex;
-}
-
-header nav .menu_wrapper #global_nav {
-  background: url(./images/1000_F_104334782_LpQ35OWS1geunQfvyHdm2IItZEipnGOy.jpg)
-    no-repeat 100% / cover;
-  /* margin: 0;
-  padding: 0; */
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 0;
+.navbar {
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
   overflow: hidden;
 }
-header nav .menu_wrapper #global_nav menu {
-  position: relative;
+
+.navbar h1 {
+  width: 20%;
+  height: 70%;
+  margin: 0 auto;
+  margin-left: 20px;
+  background: url(./images/logo_b.png) no-repeat 50% / contain;
+  display: block;
+  text-indent: -9999px;
 }
-header nav .menu_wrapper #global_nav menu {
-  position: absolute;
-  top: 30%;
-  left: 20%;
-  transform: translate(-50% -50%);
+
+.navbar ul {
+  width: 80%;
+  justify-content: space-around;
 }
-header nav .menu_wrapper #global_nav li {
-  text-align: center;
-  font-family: "MuseumClassic";
-  font-size: 40px;
-  padding: 10px;
+
+.nav-item a {
+  color: #000;
+  font-size: 0.9rem;
+  font-weight: 400;
+  text-decoration: none;
+  transition: color 0.3s ease-out;
+}
+
+.nav-item a:hover {
+  color: #3498db;
+}
+
+/* MOBILE MENU & ANIMATION */
+
+.menu-toggle .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #3f3f3f;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-toggle {
+  justify-self: end;
+  margin-right: 25px;
+  display: none;
+}
+
+.menu-toggle:hover {
+  cursor: pointer;
+}
+
+#mobile-menu.is-active .bar:nth-child(2) {
   opacity: 0;
 }
 
-header nav .menu_wrapper #global_nav.showMenu {
-  flex-flow: column;
-  height: 100vh;
+#mobile-menu.is-active .bar:nth-child(1) {
+  -webkit-transform: translateY(8px) rotate(45deg);
+  -ms-transform: translateY(8px) rotate(45deg);
+  -o-transform: translateY(8px) rotate(45deg);
+  transform: translateY(8px) rotate(45deg);
 }
 
-header nav .menu_wrapper #global_nav.showMenu li {
-  opacity: 1;
+#mobile-menu.is-active .bar:nth-child(3) {
+  -webkit-transform: translateY(-8px) rotate(-45deg);
+  -ms-transform: translateY(-8px) rotate(-45deg);
+  -o-transform: translateY(-8px) rotate(-45deg);
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Media Queries */
+
+/* Mobile Devices - Phones/Tablets */
+
+@media only screen and (max-width: 840px) {
+  .features {
+    flex-direction: column;
+    padding: 50px;
+  }
+
+  .page-wrapper {
+    border-radius: 0;
+
+    font-size: 25px;
+  }
+
+  /* MOBILE HEADINGS */
+
+  h1 {
+    font-size: 1.9rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+
+  /* MOBILE NAVIGATION */
+  .navbar h1 {
+    width: 50%;
+  }
+
+  .navbar ul {
+    width: 50%;
+  }
+  .navbar ul {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    justify-content: center;
+    top: 60px;
+    background-color: #fff;
+    width: 100%;
+    height: calc(100vh - 60px);
+    transform: translate(-101%);
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .navbar li {
+    padding: 15px;
+  }
+
+  .navbar li:first-child {
+    margin-top: 50px;
+  }
+
+  .menu-toggle,
+  .bar {
+    display: block;
+    cursor: pointer;
+  }
+
+  .mobile-nav {
+    transform: translate(0%) !important;
+  }
 }
 /* -------main------- */
 .main_container {
@@ -340,6 +363,10 @@ header nav .menu_wrapper #global_nav.showMenu li {
 .exhibi_txt {
   width: 90%;
   margin: 0 auto;
+  height: 80%;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
 }
 .exhibi_txt p {
   line-height: 1.5;
@@ -363,8 +390,6 @@ header nav .menu_wrapper #global_nav.showMenu li {
   text-align: center;
   margin: calc(30px + 1vw) 0;
   background-color: #fff;
-
-  /* background-color: #43c3ff; */
 }
 .docent_right,
 .docent_left {
@@ -449,11 +474,14 @@ select {
   background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='27' viewBox='0 0 24 27' fill='none'%3E%3Cpath d='M22 14.8564L13.4142 23.4422C12.6332 24.2233 11.3668 24.2233 10.5858 23.4422L2 14.8564' stroke='black' stroke-width='2'/%3E%3Cpath d='M12 24.1429V2' stroke='black' stroke-width='2'/%3E%3C/svg%3E")
     no-repeat 97% 50% / 5%;
 }
+.radio_box {
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 7vh;
+  margin-bottom: 7vh;
+}
 .radio_box .flex {
   gap: 3vw;
-}
-.radio_box .btn_more {
-  margin: 30px auto;
 }
 .radio_box input {
   width: auto;

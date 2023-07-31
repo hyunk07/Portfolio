@@ -49,19 +49,9 @@ $("#global_nav a").each(function (idx) {
 });
 
 //모바일 토글버튼
-$("#toggle_btn").on("click", function () {
-  // function 함수 사용시 this키워드가 지칭하는 대상은 클릭한 바로 그 toggle_btn
-  $(this).toggleClass("closeMenu");
-  $("#global_nav").toggleClass("showMenu");
-
-  //해당 메뉴 클릭시 닫힘
-  $("#global_nav li").each(function () {
-    // function 함수 사용시  this키워드는 내가 클릭한 그 li
-    $(this).on("click", function () {
-      $(this).removeClass("closeMenu");
-      $("#global_nav").removeClass("showMenu");
-    });
-  });
+$('.menu-toggle').click(function () {
+  $(".nav").toggleClass("mobile-nav");
+  $(this).toggleClass("is-active");
 });
 
 
