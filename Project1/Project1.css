@@ -212,25 +212,7 @@ section:first-child {
 .main-container {
   width: 100%;
 }
-.main-container .main-box {
-  margin: 20% auto 5%;
-  gap: 20px;
-}
-.main-container .main-box .num-btn li {
-  margin-left: 20px;
-  position: relative;
-  font-size: 18px;
-}
-.main-container .main-box .num-btn li a::before {
-  content: "";
-  display: inline-block;
-  width: 10px;
-  height: 3px;
-  background-color: #7e7e7e;
-  position: absolute;
-  left: -20px;
-  top: 50%;
-}
+
 .main-container .main-box .box-txt {
   font-family: "Pretendard Variable", -apple-system, BlinkMacSystemFont,
     "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif;
@@ -257,7 +239,28 @@ section:first-child {
   max-height: 480px;
   margin: 0 auto;
 }
+/* main위치조절 */
+.main-container .main-wrap {
+  padding: 70px 0 0;
+  position: relative;
+}
+.box-txt {
+  display: inline-block;
+  vertical-align: middle;
+  position: absolute;
+  left: 20%;
+  right: 10%;
+  top: 120px;
+  z-index: 1;
+  text-align: left;
+  pointer-events: none;
+  word-wrap: normal;
+  word-break: keep-all;
 
+  left: calc(120px + 0.1vw);
+  top: 90px;
+  width: auto;
+}
 /* -- sns & arrow list -- */
 .main-container .main-sns ul {
   display: none;

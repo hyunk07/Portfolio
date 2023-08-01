@@ -28,6 +28,10 @@
   <link rel="icon" type="image/png" sizes="32x32" href="../common/favicon.ioc/GRANHAND/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="../common/favicon.ioc/GRANHAND/favicon-16x16.png" />
   <link rel="manifest" href="../common/favicon.ioc/GRANHAND/site.webmanifest" />
+  <!-- owl css -->
+  <link rel="stylesheet" href="./owl/owl.carousel.min.css">
+  <link rel="stylesheet" href="./owl/owl.theme.default.min.css">
+  <link rel="stylesheet" href="./owl.css">
 
   <!-- 모바일 -->
   <link rel="stylesheet" href="./Project1.css" />
@@ -41,9 +45,13 @@
   <!-- kakao-map -->
   <script type="text/javascript"
     src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=c8c1456460f4eb5d4ce3a953ff5f795d"></script>
+  <!-- script -->
+  <script src="./owl/jquery.min.js"></script>
+  <script src="./owl/owlcarousel_owl.carousel.js"></script>
+  <script src="./owl.js"></script>
   <!-- jQuery -->
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js"></script> -->
+  <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
   <script defer src="./Project1.js"></script>
 </head>
 
@@ -77,63 +85,38 @@
   <!-- main-container -->
   <section>
     <div class="main-container">
-      <div class="main-box flex wrap85">
-        <menu class="num-btn">
-          <li><a href="#">01</a></li>
-          <li><a href="#">02</a></li>
-          <li><a href="#">03</a></li>
-        </menu>
-        <div class="box-txt">
-          <h2>
-            <span>동물실험을 하지않은</span>
-            <span>크루얼티 프리</span>
-            <strong>그랑핸드</strong>
-          </h2>
-          <h3><strong>GRANHAND</strong></h3>
-          <p>
-            <span>'향의 일상화'를 모토로, 편하게 즐길 수 있는 향과 제품을
-              연구합니다.
-            </span>
-            <span>일상을 벗어난 특별한 하루보다는 일상 그 자체를 더 좋고 아름답게
-              만드는 것에 도움이 되는 존재이고 싶습니다.
-            </span>
-            <span>누구나 마음 한편에서 소망하는 '조금 나은 일상'을 향으로서
-              제안합니다.</span>
-          </p>
+      <div class="main-wrap">
+        <div class="ot1">
+          <div class="owl-carousel owl-theme owl-loaded ">
+            <div class="owl-stage-outer">
+              <div class="owl-stage">
+                <div class="owl-item oi1"> </div>
+                <div class="owl-item oi2"> </div>
+                <div class="owl-item oi3"> </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="main-img wrap85">
-        <img src="./images/bukchon.jpg" alt="bukchon상점" />
-      </div>
-      <!-- --------sprite -------- -->
-      <div class="main-sns">
-        <ul class="flex">
-          <li>
-            <a href="https://www.facebook.com/p/GRANHAND-100064642753266/" target="_blank"
-              class="facebook">facebook<i></i></a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/granhand_official/" target="_blank"
-              class="instagram">instagram<i></i></a>
-          </li>
-          <li>
-            <a href="https://www.youtube.com/@granhand" target="_blank" class="youtube">youtube<i></i></a>
-          </li>
-        </ul>
-      </div>
-
-      <a href="#about">
-        <div class="main-down">
-          <i></i>
+        <div class="main-box flex wrap85">
+          <div class="box-txt">
+            <h2>
+              <span>동물실험을 하지않은</span>
+              <span>크루얼티 프리</span>
+              <strong>그랑핸드</strong>
+            </h2>
+            <h3><strong>GRANHAND</strong></h3>
+            <p>
+              <span>'향의 일상화'를 모토로, 편하게 즐길 수 있는 향과 제품을
+                연구합니다.
+              </span>
+              <span>일상을 벗어난 특별한 하루보다는 일상 그 자체를 더 좋고 아름답게
+                만드는 것에 도움이 되는 존재이고 싶습니다.
+              </span>
+              <span>누구나 마음 한편에서 소망하는 '조금 나은 일상'을 향으로서
+                제안합니다.</span>
+            </p>
+          </div>
         </div>
-      </a>
-      <div class="main-arrow flex">
-        <a href="#">
-          <div class="left-btn"></div>
-        </a>
-        <a href="#">
-          <div class="right-btn"></div>
-        </a>
       </div>
     </div>
   </section>
@@ -195,37 +178,104 @@
           </div>
         </div>
       </div>
-
-      <div class="store-imgbox">
-        <div class="store-info wrap85">
-          <div class="commonness-txt">
-            <h3>그랑핸드 서촌</h3>
-            <p>
-              <span>서울의 과거와 현재가 공존하는 경복궁 옆 그랑핸드
-                서촌점은</span>
-              <span>2층으로 이루어져 있습니다. 큰 감나무가 반겨주는
-                정감있는</span>
-              <span>공간으로 주변에 맛집과 볼거리가 다양합니다.</span>
-            </p>
+      <!-- store-imgbox -->
+      <div class="ot2">
+        <div class="owl-carousel owl-theme owl-loaded ">
+          <div class="owl-stage-outer">
+            <div class="owl-stage">
+              <div class="owl-item oi1">
+                <div class="store-info wrap85">
+                  <div class="commonness-txt">
+                    <h3>그랑핸드 서촌</h3>
+                    <p>
+                      <span>서울의 과거와 현재가 공존하는 경복궁 옆 그랑핸드
+                        서촌점은</span>
+                      <span>2층으로 이루어져 있습니다. 큰 감나무가 반겨주는
+                        정감있는</span>
+                      <span>공간으로 주변에 맛집과 볼거리가 다양합니다.</span>
+                    </p>
+                  </div>
+                  <div class="more-btn"><a href="#">MORE</a></div>
+                </div>
+              </div>
+              <div class="owl-item oi2">
+                <div class="store-info wrap85">
+                  <div class="commonness-txt">
+                    <h3>그랑핸드 서촌</h3>
+                    <p>
+                      <span>서울의 과거와 현재가 공존하는 경복궁 옆 그랑핸드
+                        서촌점은</span>
+                      <span>2층으로 이루어져 있습니다. 큰 감나무가 반겨주는
+                        정감있는</span>
+                      <span>공간으로 주변에 맛집과 볼거리가 다양합니다.</span>
+                    </p>
+                  </div>
+                  <div class="more-btn"><a href="#">MORE</a></div>
+                </div>
+              </div>
+              <div class="owl-item oi3">
+                <div class="store-info wrap85">
+                  <div class="commonness-txt">
+                    <h3>그랑핸드 서촌</h3>
+                    <p>
+                      <span>서울의 과거와 현재가 공존하는 경복궁 옆 그랑핸드
+                        서촌점은</span>
+                      <span>2층으로 이루어져 있습니다. 큰 감나무가 반겨주는
+                        정감있는</span>
+                      <span>공간으로 주변에 맛집과 볼거리가 다양합니다.</span>
+                    </p>
+                  </div>
+                  <div class="more-btn"><a href="#">MORE</a></div>
+                </div>
+              </div>
+              <div class="owl-item oi4">
+                <div class="store-info wrap85">
+                  <div class="commonness-txt">
+                    <h3>그랑핸드 서촌</h3>
+                    <p>
+                      <span>서울의 과거와 현재가 공존하는 경복궁 옆 그랑핸드
+                        서촌점은</span>
+                      <span>2층으로 이루어져 있습니다. 큰 감나무가 반겨주는
+                        정감있는</span>
+                      <span>공간으로 주변에 맛집과 볼거리가 다양합니다.</span>
+                    </p>
+                  </div>
+                  <div class="more-btn"><a href="#">MORE</a></div>
+                </div>
+              </div>
+              <div class="owl-item oi5">
+                <div class="store-info wrap85">
+                  <div class="commonness-txt">
+                    <h3>그랑핸드 서촌</h3>
+                    <p>
+                      <span>서울의 과거와 현재가 공존하는 경복궁 옆 그랑핸드
+                        서촌점은</span>
+                      <span>2층으로 이루어져 있습니다. 큰 감나무가 반겨주는
+                        정감있는</span>
+                      <span>공간으로 주변에 맛집과 볼거리가 다양합니다.</span>
+                    </p>
+                  </div>
+                  <div class="more-btn"><a href="#">MORE</a></div>
+                </div>
+              </div>
+              <div class="owl-item oi6">
+                <div class="store-info wrap85">
+                  <div class="commonness-txt">
+                    <h3>그랑핸드 서촌</h3>
+                    <p>
+                      <span>서울의 과거와 현재가 공존하는 경복궁 옆 그랑핸드
+                        서촌점은</span>
+                      <span>2층으로 이루어져 있습니다. 큰 감나무가 반겨주는
+                        정감있는</span>
+                      <span>공간으로 주변에 맛집과 볼거리가 다양합니다.</span>
+                    </p>
+                  </div>
+                  <div class="more-btn"><a href="#">MORE</a></div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="more-btn"><a href="#">MORE</a></div>
         </div>
-        <menu class="store-none">
-          <li></li>
-          <li></li>
-          <li></li>
-          <li class="active"></li>
-          <li></li>
-          <li></li>
-        </menu>
-        <menu class="store-list">
-          <li><a href="#">DOSAN</a></li>
-          <li><a href="#">NAMSAN</a></li>
-          <li><a href="#">MAPO</a></li>
-          <li><a href="#">SEOCHON</a></li>
-          <li><a href="#">SOGYRONK</a></li>
-          <li><a href="#">BUKCHON</a></li>
-        </menu>
       </div>
     </div>
   </section>
