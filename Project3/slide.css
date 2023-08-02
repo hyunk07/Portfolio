@@ -335,7 +335,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 500px;
+  width: 450px;
   border-radius: 10px;
   aspect-ratio: 4/6;
 }

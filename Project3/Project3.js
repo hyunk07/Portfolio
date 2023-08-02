@@ -138,7 +138,7 @@ var mySwiper2 = new Swiper(".mySwiper2", {
 /* ------hanok------ */
 var swiper3 = new Swiper(".mySwiper3", {
   slidesPerView: 1,
-  //  spaceBetween: 10,
+   spaceBetween: 10,
    breakpoints:{
       500: {
     slidesPerView: 4,
