@@ -171,38 +171,50 @@ header nav .mobile-btn a::before {
 }
 header nav .mobile-btn a i {
   display: block;
-  width: 27px;
+  width: 20px;
   height: 3px;
   background-color: #131313;
   position: absolute;
   top: 50%;
+  right: 0;
   transform: translateY(-50%);
+  transition: 0.5s;
 }
 header nav .mobile-btn a::after {
   content: "";
   display: block;
-  width: 22px;
+  width: 15px;
   height: 3px;
   border-radius: 3px;
   background-color: #131313;
   position: absolute;
   bottom: 0;
   right: 0;
+  transition: 0.5s;
 }
+
 header nav .mobile-btn a:hover i {
-  display: none;
-}
-header nav .mobile-btn a:hover:before {
-  transform: rotate(45deg) translateY(-50%);
-  top: 50%;
-  left: 0;
-  width: 35px;
+  width: 27px;
 }
 header nav .mobile-btn a:hover:after {
-  transform: rotate(-45deg) translateY(-50%);
+  width: 27px;
+}
+header nav .mobile-btn .btna.style i {
+  display: none;
+}
+header nav .mobile-btn .btna.style:before {
+  transform: rotate(45deg) translateY(-53%);
   top: 50%;
   left: 0;
   width: 35px;
+  transition: 0.5s;
+}
+header nav .mobile-btn .btna.style:after {
+  transform: rotate(-45deg) translateY(-47%);
+  top: 50%;
+  left: 0;
+  width: 35px;
+  transition: 0.5s;
 }
 /* -----------main----------- */
 /* -- container -- */
@@ -243,6 +255,7 @@ section:first-child {
 .main-container .main-wrap {
   padding: 70px 0 0;
   position: relative;
+  margin: 0 auto;
 }
 .box-txt {
   display: inline-block;
@@ -262,10 +275,10 @@ section:first-child {
   width: auto;
 }
 /* -- sns & arrow list -- */
-.main-container .main-sns ul {
+.main-sns ul {
   display: none;
 }
-.main-container .main-arrow {
+.main-arrow {
   display: none;
 }
 
@@ -347,84 +360,30 @@ section:first-child {
   margin: 0 auto;
 }
 
-.store-container .store-imgbox {
-  background: url(./images/namsan.jpg) no-repeat 50% / cover;
-  height: 850px;
-  position: relative;
-}
-
-.store-container .store-imgbox .store-info {
-  margin: 0 5%;
-  color: #fff;
-  position: absolute;
-  bottom: 70px;
-}
-.store-container .store-wrap .commonness-txt {
-  padding: 10px 0;
-}
-.store-container .store-imgbox .store-info .commonness-txt p span {
-  display: inline;
-}
 .store-container .store-wrap .store-text {
   padding: 10px 0;
 }
-.store-container .store-list {
-  display: none;
-}
-.store-container .store-none {
-  width: 40%;
-  /* display: none; */
-  display: flex;
-  color: #fff;
-  justify-content: space-between;
-  margin: 0 30%;
-
-  position: absolute;
-  bottom: 35px;
-  z-index: 9;
-}
-.store-container .store-none li {
-  display: block;
+.owl-item {
   position: relative;
 }
-.store-container .store-none li::after {
-  content: "";
-  display: inline-block;
-  width: 15px;
-  height: 3px;
-  background-color: #fff;
-  opacity: 0.5;
+.ot2 .store-info {
   position: absolute;
-}
-.store-container .store-none li.active::after {
-  background-color: #fff;
-  opacity: 1;
-}
-.store-container .store-imgbox .more-btn a {
-  color: #b18468;
-  background-color: #fff;
-  border: 2px solid #fff;
-}
-.store-container .store-imgbox .more-btn a::before {
-  background-color: #b18468;
-}
-.store-container .store-imgbox .more-btn a:hover {
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
   color: #fff;
-  background-color: transparent;
-  border: 2px solid #fff;
 }
-.store-container .store-imgbox .more-btn a:hover::before {
-  background-color: #fff;
-}
-.store-container .store-imgbox .more-btn {
-  margin-top: 20px;
+.ot2 .store-info p {
+  margin: 40px 0;
+  font-size: 16px;
 }
 /* -- map-container -- */
 .map-container .map-wrap {
   padding: 100px 0;
   margin: 0 auto;
 }
-.map-container .map-wrap .more-btn {
+*/ .map-container .map-wrap .more-btn {
   margin-top: 40px;
 }
 .map-container .map-wrap .commonness-txt h3 {

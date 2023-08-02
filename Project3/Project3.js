@@ -21,20 +21,7 @@ $(".title_logo").on("click", () => {
   });
 });
 
-/* $(".title_logo").on("click", () => {
-  $("html, body").animate(
-    {
-      scrollTop: 0,
-    },
-    "smooth"
-  );
-}); */
 
-// 배당 박스로 부드러운 이동
-// array.forEach(element => {});
-// .each(function(index){}); 각요소에 함수 각각 저굥. 콜백함수에 매개변수를 작성하면 index를 의미
-
-// $('#global_nav li:nth-child(0) a').on('click',()=>{})
 $("#global_nav a").each(function (idx) {
   // function 함수 사용시  this키워드는 내가 클릭한 그 a
   $(this).on("click", function (e) {
@@ -138,20 +125,6 @@ const mySwiper1 = new Swiper(".mySwiper1", {
     prevEl: ".mySwiper1 .swiper-button-prev",
   },
 });
-/* ----------docent---------- */
-// const mySwiper2 = new Swiper(".mySwiper2", {
-//   loop: true,
-//   pagination: {
-//     // 하단 페이지네이션
-//     el: ".mySwiper2 .swiper-pagination",
-//     clickable: true,
-//   },
-//   centeredSlides: true,
-//   autoplay: {
-//     delay: 2500,
-//     disableOnInteraction: false,
-//   },
-// });
 
 
 
@@ -165,7 +138,7 @@ var mySwiper2 = new Swiper(".mySwiper2", {
 /* ------hanok------ */
 var swiper3 = new Swiper(".mySwiper3", {
   slidesPerView: 1,
-   spaceBetween: 10,
+  //  spaceBetween: 10,
    breakpoints:{
       500: {
     slidesPerView: 4,
@@ -177,3 +150,5 @@ var swiper3 = new Swiper(".mySwiper3", {
 },
 });
 
+/* ---------------------------- a[href="#"] a값 제거---------------------------- */
+$('a[href="#"]').on("click", (e) => e.preventDefault());
