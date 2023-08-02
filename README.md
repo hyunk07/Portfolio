@@ -1,4 +1,9 @@
 # Portfolio
+
+## 포트폴리오 폴더 구성
+
+<img src="https://github.com/hyunk07/Portfolio/assets/127369525/544bc4bf-7ca3-41fc-be4d-ebfdfeb3af1d" width="800" >
+
 ## Overview
 
 - 목표
