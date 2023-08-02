@@ -10,7 +10,7 @@
 	- 정보전달
 - Color
   
-![Group 55](https://github.com/hyunk07/Portfolio/assets/127369525/c79d97d8-b602-428c-8166-5d85fc8812c5)
+<img src="https://github.com/hyunk07/Portfolio/assets/127369525/c79d97d8-b602-428c-8166-5d85fc8812c5" width="350" >
 
 - Typography
 ## Publishing
