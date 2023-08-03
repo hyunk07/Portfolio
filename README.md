@@ -56,7 +56,7 @@
 -  @font-face를 적용해서 폰트제공
 - JavaScript를 이용한 자동 슬라이드 배너 제작
 -  animation 사용한 화려한 움직임
--  
+
 <br>
 <br>
 
