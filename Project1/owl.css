@@ -1,0 +1,274 @@
+.ot1 .owl-item {
+  width: 100%;
+  height: 450px;
+}
+
+.ot1 .owl-stage-outer {
+  margin: 30vh 0 0;
+}
+
+.ot1 .owl-carousel {
+  position: relative;
+}
+/* 이미지 */
+.ot1 .owl-stage-outer .oi1 {
+  background: url(./images/bukchon.jpg) no-repeat 50% / cover;
+}
+.ot1 .owl-stage-outer .oi2 {
+  background: url(./images/dosan1.jpg) no-repeat 50% / cover;
+}
+.ot1 .owl-stage-outer .oi3 {
+  background: url(./images/dosan2.jpg) no-repeat 50% / cover;
+}
+.ot1 .owl-carousel .owl-nav div {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  background-color: #131313;
+}
+
+.ot1 .owl-nav {
+  position: absolute;
+  right: 10%;
+  top: 330px;
+  position: relative;
+}
+
+.ot1 .customPrevBtn,
+.ot1 .customNextBtn {
+  display: block;
+  color: #999999;
+  font-size: 50px;
+  font-weight: bold;
+}
+/* 위치조절 */
+.ot1 .owl-carousel .owl-nav {
+  display: inline-block;
+  vertical-align: middle;
+  position: absolute;
+  right: 10%;
+  top: -40px;
+  z-index: 1;
+}
+.ot1 .owl-dots {
+  position: absolute;
+  top: -250px;
+  left: 0;
+}
+/* 원형모양 */
+.ot1 .owl-theme .owl-dots .owl-dot {
+  display: flex;
+  flex-direction: column;
+}
+.ot1 .owl-theme .owl-dots .owl-dot span {
+  width: 15px;
+  height: 3px;
+  margin: 20px 20px;
+  border-radius: 0;
+  background-color: #ddd;
+  position: relative;
+  transition: 0.2s;
+}
+.ot1 .owl-theme .owl-dots .owl-dot span::after {
+  color: #ddd;
+  position: absolute;
+  right: -25px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: 0.2s;
+}
+.ot1 .owl-theme .owl-dots .owl-dot:nth-child(1) span::after {
+  content: "1";
+}
+.ot1 .owl-theme .owl-dots .owl-dot:nth-child(2) span::after {
+  content: "2";
+}
+.ot1 .owl-theme .owl-dots .owl-dot:nth-child(3) span::after {
+  content: "3";
+}
+.ot1 .owl-theme .owl-dots .owl-dot.active span,
+.ot1 .owl-theme .owl-dots .owl-dot:hover span {
+  background: #131313;
+}
+.ot1 .owl-theme .owl-dots .owl-dot.active span::after,
+.ot1 .owl-theme .owl-dots .owl-dot:hover span::after {
+  color: #131313;
+  font-weight: 700;
+}
+
+/* 화살버튼 */
+.ot1 .owl-nav button {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  background: #666666;
+}
+.ot1 .owl-carousel .owl-nav button.owl-next span,
+.ot1 .owl-carousel .owl-nav button.owl-prev span {
+  display: none;
+}
+/* 안보이게 하기 */
+.ot1 .owl-theme .owl-nav {
+  display: none;
+}
+.ot1 .owl-theme .owl-nav [class*="owl-"] {
+  border-radius: 0;
+  margin: 1px;
+}
+
+.ot1 .owl-carousel .owl-nav button.owl-next,
+.ot1 .owl-carousel .owl-nav button.owl-prev {
+  background: #666666;
+  transition: 0.3s;
+}
+.ot1 .owl-theme .owl-nav [class*="owl-"]:hover {
+  background: #131313;
+  color: #fff;
+  text-decoration: none;
+}
+.ot1 .owl-carousel .owl-nav button.owl-next {
+  position: relative;
+}
+.ot1 .owl-carousel .owl-nav button.owl-next::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -20px;
+  margin-top: -12px;
+  border-top: #fff solid 2px;
+  border-right: #fff solid 2px;
+  transform: rotate(45deg);
+}
+.ot1 .owl-carousel .owl-nav button.owl-prev {
+  position: relative;
+}
+.ot1 .owl-carousel .owl-nav button.owl-prev::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -5px;
+  margin-top: -12px;
+  border-top: #fff solid 2px;
+  border-right: #fff solid 2px;
+  transform: rotate(225deg);
+}
+
+/* ------------------.ot2------------------- */
+
+.ot2 .owl-item {
+  width: 100%;
+  height: 780px;
+}
+
+.ot2 .owl-stage-outer {
+  /* margin: 30vh 0 0; */
+  width: 100%;
+}
+
+.ot2 .owl-carousel {
+  position: relative;
+}
+/* 이미지 */
+.ot2 .owl-stage-outer .oi1 {
+  background: url(images/seochon2.jpg) no-repeat 50% / cover;
+}
+.ot2 .owl-stage-outer .oi2 {
+  background: url(images/dosan.jpg) no-repeat 50% / cover;
+}
+.ot2 .owl-stage-outer .oi3 {
+  background: url(images/mapo2.jpg) no-repeat 50% / cover;
+}
+.ot2 .owl-stage-outer .oi4 {
+  background: url(images/namsan4.jpg) no-repeat 50% / cover;
+}
+.ot2 .owl-stage-outer .oi5 {
+  background: url(images/sogyeok.jpg) no-repeat 50% / cover;
+}
+.ot2 .owl-stage-outer .oi6 {
+  background: url(images/bukchon.jpg) no-repeat 50% / cover;
+}
+.ot2 .owl-carousel .owl-nav div {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  background-color: #131313;
+}
+
+.ot2 .owl-nav {
+  position: absolute;
+  right: 10%;
+  top: 330px;
+  position: relative;
+}
+
+.ot2 .customPrevBtn,
+.ot2 .customNextBtn {
+  display: block;
+  color: #999999;
+  font-size: 50px;
+  font-weight: bold;
+}
+/* 위치조절 */
+/* ot2 가로 */
+.ot2 .owl-dots {
+  position: absolute;
+  bottom: 3%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+/* 원형모양 */
+.ot2 .owl-theme .owl-dots .owl-dot {
+  display: flex;
+  flex-direction: column;
+}
+.ot2 .owl-theme .owl-dots .owl-dot span {
+  width: 17px;
+  height: 5px;
+  margin: 20px 20px;
+  border-radius: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: relative;
+  transition: 0.2s;
+}
+.ot2 .owl-theme .owl-dots .owl-dot span::before {
+  color: rgba(0, 0, 0, 0.4);
+  position: relative;
+  position: absolute;
+  right: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  font-weight: 700;
+  transition: 0.2s;
+}
+
+.ot2 .owl-theme .owl-dots .owl-dot.active span,
+.ot2 .owl-theme .owl-dots .owl-dot:hover span {
+  background: #fff;
+}
+.ot2 .owl-theme .owl-dots .owl-dot.active span::before,
+.ot2 .owl-theme .owl-dots .owl-dot:hover span::before {
+  color: #fff;
+  font-weight: 700;
+}
+
+/* 화살버튼 */
+.ot2 .owl-theme .owl-nav {
+  display: none;
+}

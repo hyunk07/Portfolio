@@ -57,16 +57,6 @@ header nav .nav-bar li {
   position: relative;
 }
 
-/* header nav .nav-bar li:hover a::after {
-  content: "";
-  width: 90%;
-  height: 3px;
-  display: block;
-  background-color: #131313;
-  position: absolute;
-  top: 60px;
-  animation: move 3s linear 1s;
-} */
 header nav .nav-bar li a::after {
   position: absolute;
   top: 60px;
@@ -112,40 +102,71 @@ p {
 .main-container .main-box .box-txt p span {
   display: block;
 }
-
+.ot1 .owl-item {
+  width: 100%;
+  height: 720px;
+}
+.ot1 .owl-theme .owl-nav {
+  display: block;
+}
+/* main위치조절 */
+.main-container .main-wrap {
+  padding: 270px 0 0;
+  position: relative;
+  margin: 0 auto;
+}
+.box-txt {
+  display: inline-block;
+  vertical-align: middle;
+  position: absolute;
+  left: 20%;
+  left: calc(250px + 0.1vw);
+  top: 100px;
+  z-index: 1;
+  text-align: left;
+  pointer-events: none;
+  word-wrap: normal;
+  word-break: keep-all;
+  width: auto;
+}
+.ot1 .owl-dots {
+  position: absolute;
+  top: -450px;
+  left: 0;
+}
 /* --------sprite --------*/
-.main-container .main-sns ul {
+.main-sns ul {
   display: block;
   position: fixed;
   bottom: 50px;
   left: 3%;
   z-index: 99;
 }
-.main-container .main-sns li {
+.main-sns li {
   width: 30px;
   height: 30px;
   margin: 5px 0;
 }
-.main-container .main-sns li a {
+.main-sns li a {
   position: relative;
   display: block;
   width: 100%;
   height: 100%;
   text-indent: -9999pc;
 }
-.main-container .main-sns li .facebook {
+.main-sns li .facebook {
   background: url(./images/icon_sns.svg) no-repeat;
   background-position: left top;
 }
-.main-container .main-sns li .instagram {
+.main-sns li .instagram {
   background: url(./images/icon_sns.svg) no-repeat;
   background-position: left 50%;
 }
-.main-container .main-sns li .youtube {
+.main-sns li .youtube {
   background: url(./images/icon_sns.svg) no-repeat;
   background-position: left bottom;
 }
-.main-container .main-sns li i {
+.main-sns li i {
   display: block;
   width: 30px;
   height: 30px;
@@ -156,7 +177,7 @@ p {
   left: -115px;
   opacity: 0;
 }
-.main-container .main-sns li:hover a i {
+.main-sns li:hover a i {
   opacity: 1;
   left: 0;
   top: 0;
@@ -164,25 +185,25 @@ p {
 
   transition-duration: 0.2s;
 }
-.main-container .main-sns li:hover .facebook {
+.main-sns li:hover .facebook {
   background-position: right top;
 }
-.main-container .main-sns li:hover .instagram {
+.main-sns li:hover .instagram {
   background-position: right 50%;
 }
-.main-container .main-sns li:hover .youtube {
+.main-sns li:hover .youtube {
   background-position: right bottom;
 }
 /* --------------------- */
 
-.main-container .main-down {
+.main-down {
   width: 30px;
   height: 65px;
   position: absolute;
   bottom: 90px;
   right: 1.5vw;
 }
-.main-container .main-down::before {
+.main-down::before {
   content: "";
   position: absolute;
   left: 15px;
@@ -191,7 +212,7 @@ p {
   height: 40px;
   background-color: #131313;
 }
-.main-container .main-down::after {
+.main-down::after {
   content: "";
   position: absolute;
   left: 8px;
@@ -201,13 +222,8 @@ p {
   border-right: #131313 solid 1px;
   transform: rotate(135deg);
 }
-.main-container .main-arrow {
+.main-arrow {
   top: 425px;
-}
-
-.main-container .main-img {
-  transform: translateY(-270px);
-  transition: 0.1s;
 }
 
 /* -- about-container -- */

@@ -1,25 +1,3 @@
-/* ---------------------------- scroll-up-bar ---------------------------- */
-let prescroll = window.scrollY;
-console.log(prescroll);
-
-$(window).on("scroll", () => {
-  //스크롤시 변수에 저장
-  let scroll = window.scrollY;
-  console.log(scroll);
-  console.log("prescroll00", prescroll);
-
-  // 이전 스크롤값이 크면 트루, 스크루 올리면 헤더보임
-  if (prescroll > scroll) {
-    $("header").css({ top: 0 });
-  } else {
-    // 이후 스크롤값이 크면 풜스, 스크루 올리면 헤더가려짐
-    $("header").css({ top: -100 });
-  }
-
-  // prescroll에 현재 스크롤값 대입. 현재 좌표에서
-  prescroll = scroll;
-  console.log(prescroll);
-});
 /* ---------------------------- 스크롤 up버튼 ---------------------------- */
 $(document).on("scroll", () => {
   let scrollHT = $(document).scrollTop();
@@ -40,6 +18,21 @@ $(document).on("scroll", () => {
     $(".main-down").css({ opacity: 1, pointerEvents: "all" });
   }
 });
+
+/* ---------------------------- sns remve ---------------------------- */
+$(window).on('scroll', () => {
+  let scroll = $('footer').offset().top - $('footer').height();
+  console.log(scrollY);
+  console.log(scroll);
+  console.log(document.documentElement.clientHeight);
+
+  let result = scroll - document.documentElement.clientHeight;
+  if (scrollY > (result + 300)) {
+    $(".main-sns").css({ opacity: 0, pointerEvents: "none" });
+  } else {
+    $(".main-sns").css({ opacity: 1, pointerEvents: "all" });
+  }
+});
 /* ---------------------------- a[href="#"] a값 제거---------------------------- */
 $('a[href="#"]').on("click", (e) => e.preventDefault());
 
@@ -47,7 +40,11 @@ $('a[href="#"]').on("click", (e) => e.preventDefault());
 const globalNav = document.querySelector(".nav-bar");
 const mobileBtn = document.querySelector(".mobile-btn");
 mobileBtn.addEventListener("click", () => globalNav.classList.toggle("act"));
-
+$(function () {
+  $('.mobile-btn').on('click', () => {
+     $('.btna ').toggleClass('style');
+  })
+})
 /* ---------------------------- kakao-map ---------------------------- */
 var mapContainer = document.getElementById("kakao-map"), // 지도를 표시할 div
   mapOption = {

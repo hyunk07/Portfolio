@@ -66,7 +66,35 @@
   width: 15px;
   left: -35px;
 }
-
+.ot1 .owl-item {
+  width: 100%;
+  height: 600px;
+}
+/* main위치조절 */
+.main-container .main-wrap {
+  padding: 250px 0 0;
+  position: relative;
+  margin: 0 auto;
+}
+.box-txt {
+  display: inline-block;
+  vertical-align: middle;
+  position: absolute;
+  left: 20%;
+  left: calc(120px + 0.1vw);
+  top: 120px;
+  z-index: 1;
+  text-align: left;
+  pointer-events: none;
+  word-wrap: normal;
+  word-break: keep-all;
+  width: auto;
+}
+.ot1 .owl-dots {
+  position: absolute;
+  top: -390px;
+  left: 0;
+}
 /* ------ new ------ */
 .main-container .main-arrow {
   display: inline-block;
@@ -191,7 +219,7 @@ p {
   width: 50%;
 }
 .store-container .store-wrap {
-  margin-top: 90px;
+  margin: 90px auto;
 }
 
 .store-container .store-imgbox {
@@ -215,9 +243,9 @@ p {
   top: 40%;
   display: inline-block;
 }
-.store-container .store-none {
+/* .store-container .store-none {
   display: none;
-}
+} */
 .store-container .store-list {
   display: block;
   font-size: 17px;
@@ -244,7 +272,46 @@ p {
   right: -50px;
   top: 50%;
 }
-
+.ot2 {
+  padding: 400px 0 0;
+}
+.ot2 .store-info {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* 세로정렬 */
+.ot2 .owl-dots {
+  position: absolute;
+  top: 35%;
+  left: 90%;
+  /* right: -30px; */
+  display: flex;
+  flex-direction: column;
+}
+.ot2 .owl-theme .owl-dots .owl-dot {
+  width: 15px;
+}
+/* txt */
+.ot2 .owl-theme .owl-dots .owl-dot:nth-child(1) span::before {
+  content: "DOSAN";
+}
+.ot2 .owl-theme .owl-dots .owl-dot:nth-child(2) span::before {
+  content: "NAMSAN";
+}
+.ot2 .owl-theme .owl-dots .owl-dot:nth-child(3) span::before {
+  content: "MAPO";
+}
+.ot2 .owl-theme .owl-dots .owl-dot:nth-child(4) span::before {
+  content: "SEOCHON";
+}
+.ot2 .owl-theme .owl-dots .owl-dot:nth-child(5) span::before {
+  content: "SOGYRONK";
+}
+.ot2 .owl-theme .owl-dots .owl-dot:nth-child(6) span::before {
+  content: "BUKCHON";
+}
 /* -- map-container -- */
 
 .map-container .map-wrap.commonness-txt p span {

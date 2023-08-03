@@ -85,18 +85,6 @@ h2 {
   justify-content: space-around;
 }
 
-.nav-item a {
-  color: #000;
-  font-size: 0.9rem;
-  font-weight: 400;
-  text-decoration: none;
-  transition: color 0.3s ease-out;
-}
-
-.nav-item a:hover {
-  color: #3498db;
-}
-
 /* MOBILE MENU & ANIMATION */
 
 .menu-toggle .bar {
