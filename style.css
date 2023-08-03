@@ -560,7 +560,8 @@ header {
 .combox .gallery .site .site_txt h3 {
   font-size: calc(1.5rem + 1vw);
   margin: 5% 0;
-  font-weight: 600;
+  /* font-weight: 600; */
+  font-weight: 500;
 }
 .combox .gallery .site .site_txt p {
   margin: 15px 0;
