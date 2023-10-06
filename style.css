@@ -368,9 +368,6 @@ header {
   }
 }
 
-.mian_container .main_go svg {
-  /* width: 90%; */
-}
 .mian_container .main_go {
   display: block;
   position: relative;
@@ -379,25 +376,9 @@ header {
 
   animation: move1 2s infinite;
 }
-/* .mian_container .main_go .go_txt span:first-child {
-  position: absolute;
-  top: 3%;
-  left: 20%;
-}
-.mian_container .main_go .go_txt span:nth-child(2) {
-  position: absolute;
-  bottom: 17%;
-  right: 5%;
-}
-.mian_container .main_go .go_txt span:last-child {
-  text-align: right;
-  position: absolute;
-  bottom: 17%;
-  right: 2%;
-} */
 .mian_container .main_go .go_txt .me_text {
   position: absolute;
-  top: 4%;
+  top: 2%;
   left: 20%;
 }
 .mian_container .main_go .go_txt span:nth-child(2) {
@@ -454,8 +435,6 @@ header {
   transform: rotate(45deg);
 }
 /* ------------바로가기------------ */
-.combox {
-}
 .indibox {
   position: relative;
 }
@@ -567,9 +546,7 @@ header {
   height: 100%;
   border-radius: 20px;
 }
-.site .site_bg:hover a {
-  /* background-color: rgba(251, 255, 0, 0.5); */
-}
+
 /* ------사이트 페이지 추가하기+배경색 */
 
 .combox .siteok .site_bg:hover a {
@@ -598,7 +575,7 @@ header {
 .site .site_bg {
   background: #fff;
 }
-.site3 .site_bg {
+.indibox .site4 .site_bg {
   background: #fff url(./images/dino.gif) no-repeat 85% 80% / 20%;
 }
 /* 팀 */
@@ -613,6 +590,9 @@ header {
 }
 .teambox .site3 .moer_btn a:hover {
   color: transparent;
+}
+.teambox .site3 .site_bg {
+  background: #fff url(./images/dino.gif) no-repeat 85% 80% / 20%;
 }
 /* ---- */
 .combox .gallery .site .site_txt {
@@ -795,7 +775,6 @@ header {
 /* --------------- */
 .text3 {
   font-size: 2rem;
-  /* margin-top: 7vw; */
 }
 
 .text3::after {
