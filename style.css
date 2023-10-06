@@ -564,7 +564,7 @@ header {
   background: url(./images/grangand.png) no-repeat 50% / cover;
 }
 .indibox .site3 .site_bg {
-  background: url(./images/Portfolio_main.png) no-repeat 50% / contain;
+  background: url(./images/Portfolio_main.png) no-repeat 50% / cover;
 }
 .indibox .site4 .moer_btn {
   color: transparent;
