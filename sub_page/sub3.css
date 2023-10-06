@@ -24,6 +24,7 @@
 
 .design_color menu li:nth-child(1) {
   background-color: #afafaf;
+  border-bottom-left-radius: 50px;
 }
 .design_color menu li:nth-child(2) {
   background-color: #131313;
@@ -32,6 +33,7 @@
 .design_color menu li:nth-child(3) {
   background-color: #000000;
   color: #fff;
+  border-top-right-radius: 50px;
 }
 .design_grid .grid_box {
   width: 35vw;

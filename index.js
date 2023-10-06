@@ -3,7 +3,7 @@ $('a[href="#"]').on("click", (e) => {
   e.preventDefault();
 });
 
-// 
+//
 $(".toptxt").on("click", () => {
   window.scrollTo({ top: 0 });
 });
@@ -46,7 +46,6 @@ $(".innexBtn")
     $(" .ingallery> li").first().appendTo(".ingallery");
   });
 
-  
 /* 팀 */
 $(".tprevBtn").on("click", () => {
   $(" .tgallery > li").last().prependTo(".tgallery ");
@@ -154,7 +153,7 @@ setTimeout(typing2, 1500);
 // ---------타이핑3
 const $text3 = document.querySelector(" .text3");
 
-const letters3 = ["중요한 건 꺾였는데도 그냥 하는 마음"];
+const letters3 = ["learn more about Hyunkyoung's Portfoilo"];
 
 const speed3 = 100;
 let f = 0;

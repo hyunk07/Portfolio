@@ -20,14 +20,14 @@ $(document).on("scroll", () => {
 });
 
 /* ---------------------------- sns remve ---------------------------- */
-$(window).on('scroll', () => {
-  let scroll = $('footer').offset().top - $('footer').height();
+$(window).on("scroll", () => {
+  let scroll = $("footer").offset().top - $("footer").height();
   console.log(scrollY);
   console.log(scroll);
   console.log(document.documentElement.clientHeight);
 
   let result = scroll - document.documentElement.clientHeight;
-  if (scrollY > (result + 300)) {
+  if (scrollY > result + 300) {
     $(".main-sns").css({ opacity: 0, pointerEvents: "none" });
   } else {
     $(".main-sns").css({ opacity: 1, pointerEvents: "all" });
@@ -41,10 +41,10 @@ const globalNav = document.querySelector(".nav-bar");
 const mobileBtn = document.querySelector(".mobile-btn");
 mobileBtn.addEventListener("click", () => globalNav.classList.toggle("act"));
 $(function () {
-  $('.mobile-btn').on('click', () => {
-     $('.btna ').toggleClass('style');
-  })
-})
+  $(".mobile-btn").on("click", () => {
+    $(".btna ").toggleClass("style");
+  });
+});
 /* ---------------------------- kakao-map ---------------------------- */
 var mapContainer = document.getElementById("kakao-map"), // 지도를 표시할 div
   mapOption = {

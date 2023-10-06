@@ -5,9 +5,6 @@
   margin: 0 auto;
   font-size: calc(18px + 0.1vw);
 }
-.main_title {
-  font-size: calc(3rem + 1vw);
-}
 
 .word {
   font-size: calc(30px + 2vw);
@@ -19,9 +16,8 @@
   margin: 15vw 0;
 }
 .txt_wrap h3 {
-  font-size: 25px;
+  font-size: 20px;
   margin: 6vw auto;
-  width: 60%;
 }
 .txt_wrap h3 span {
   display: inline-block;
@@ -34,6 +30,14 @@
 
 .info_box .local p {
   width: 100%;
+}
+/* -----main----- */
+.main_wrap .logo_img {
+  width: calc(150px + 3vw);
+  background: url(./images/logo_box.png) no-repeat 50% / contain;
+}
+.main_title {
+  font-size: calc(2.7rem + 1vw);
 }
 /* -----info----- */
 .info_left,
@@ -127,11 +131,8 @@
   max-width: 350px;
 }
 /* -----hanok----- */
-.plus {
-  display: none;
-}
-.swiper-button-next::after,
-.swiper-button-prev::after {
+.hanok_wrap .swiper-button-next::after,
+.hanok_wrap .swiper-button-prev::after {
   display: block;
 }
 .mySwiper3 .swiper-button-prev {
@@ -165,6 +166,7 @@
 .news_card_content .flex {
   margin-top: 50px;
 }
+
 /* -----sumit----- */
 .sumit_container {
   padding-bottom: 10vw;

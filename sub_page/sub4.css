@@ -1,1 +1,79 @@
 @charset "utf-8";
+
+/* -----main----- */
+.main_wrap .main_bg {
+  background: rgba(221, 254, 4, 0.5) url(./images/domwipreview.png) no-repeat
+    50%/ 60%;
+}
+/* -----Design----- */
+.design_wrap {
+  justify-content: space-around;
+
+  white-space: nowrap;
+}
+
+.design_key li {
+  font-weight: 700;
+  border-radius: 40px;
+  background-color: rgba(255, 192, 31, 0.55);
+}
+.design_color menu li:nth-child(1) {
+  background-color: #f8f7f6;
+  border-bottom-left-radius: 50px;
+}
+.design_color menu li:nth-child(2) {
+  background-color: #ffbf1f;
+}
+.design_color menu li:nth-child(3) {
+  background-color: #efe8df;
+  border-top-right-radius: 50px;
+}
+.design_txt .font_w {
+  gap: 5vw;
+  align-items: center;
+}
+.design_font .design_txt h3 {
+  margin-bottom: 20px;
+}
+
+/* -----폰트설정----- */
+.pre_font menu li {
+  font-weight: 400;
+}
+
+/* ----- */
+.hs_font {
+  font-family: "HSBombaram";
+}
+.hs_font menu {
+  font-weight: 400;
+}
+/* ----- */
+.mu_font {
+  font-family: "MuseumClassic";
+}
+.mu_font menu li:nth-child(1) {
+  font-weight: 400;
+}
+.mu_font menu li:nth-child(2) {
+  font-weight: 700;
+}
+/* ----- */
+.pre_font menu li:nth-child(1) {
+  font-weight: 400;
+}
+/* Publishing */
+.Publ_wrap {
+  margin-top: 6vw;
+}
+.Publ_wrap a {
+  font-size: 20px;
+  margin-left: 40px;
+}
+.Publ_wrap img {
+  width: 22px;
+}
+.Publ_wrap ul li {
+  margin-bottom: 25px;
+  margin-left: 30px;
+}

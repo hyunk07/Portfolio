@@ -29,7 +29,7 @@ h1 {
 h2 {
   font-size: 2.25rem;
 }
-p {
+section p {
   font-size: 20px;
 }
 .wrap {
@@ -111,7 +111,7 @@ p {
   left: -200px;
 }
 /* -------header------- */
-header {
+/* header {
   box-sizing: border-box;
   position: fixed;
   border-bottom: 1px rgba(0, 0, 0, 0.5) solid;
@@ -154,7 +154,53 @@ header {
 
 .nav_bar ul {
   width: 30%;
+} */
+
+header {
+  box-sizing: border-box;
+  position: fixed;
+  border-bottom: 1px rgba(0, 0, 0, 0.5) solid;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  padding: 10px;
+  background: #fff;
+  transition: 0.5s;
+  text-transform: capitalize;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Malgun Gothic",
+    "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif;
 }
+.nav_bar {
+  padding: 20px 0;
+}
+.toptxt {
+  cursor: pointer;
+}
+
+.nav_bar .toptxt {
+  justify-content: center;
+  align-content: center;
+}
+
+.nav_bar .toptxt .logo {
+  width: 100px;
+  height: 100%;
+  background: url(../images/logo.png) no-repeat 50% / contain;
+  text-indent: -99999999px;
+}
+
+.nav_bar .toptxt .line {
+  margin: 0 10px;
+  height: 1px;
+  width: 75px;
+  align-self: center;
+}
+
+.nav_bar ul {
+  width: 30%;
+}
+
 /* -----main----- */
 .main_continer {
   margin-bottom: 80px;
@@ -211,7 +257,6 @@ header {
   width: 150px;
   height: 130px;
   padding: 20px 0 0 10px;
-
   box-shadow: rgba(50, 50, 93, 0.3) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.15) 0px 1px 3px -1px, rgba(0, 0, 0, 0.07) 0px 1px 1px,
     rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px,

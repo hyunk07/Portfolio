@@ -379,9 +379,25 @@ header {
 
   animation: move1 2s infinite;
 }
-.mian_container .main_go .go_txt span:first-child {
+/* .mian_container .main_go .go_txt span:first-child {
   position: absolute;
   top: 3%;
+  left: 20%;
+}
+.mian_container .main_go .go_txt span:nth-child(2) {
+  position: absolute;
+  bottom: 17%;
+  right: 5%;
+}
+.mian_container .main_go .go_txt span:last-child {
+  text-align: right;
+  position: absolute;
+  bottom: 17%;
+  right: 2%;
+} */
+.mian_container .main_go .go_txt .me_text {
+  position: absolute;
+  top: 4%;
   left: 20%;
 }
 .mian_container .main_go .go_txt span:nth-child(2) {
@@ -505,6 +521,38 @@ header {
   background-color: #eee;
   /* background-color: #f0ffb8; */
 }
+
+/* ------ */
+.teambox .slide {
+  width: 80%;
+  min-height: 622.672px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 30px 0;
+  /* background-color: #00aeff; */
+}
+.teambox .tgallery {
+  display: flex;
+  width: calc(150% - 7.5vw);
+  margin-left: 2.5vw;
+  gap: 2.5vw;
+}
+.teambox .tgallery li {
+  width: 50%;
+  gap: 30px;
+}
+.teambox .tgallery .site {
+  padding: 10px 0;
+  border-radius: 20px;
+  margin: 0 auto;
+  /* min-width: 100%; */
+  max-width: 505.031px;
+  /* min-height: 622.672px; */
+  max-height: 622.672px;
+  background-color: #eee;
+  /* background-color: #f0ffb8; */
+}
+
 /* ---- */
 .combox .gallery .site .site_bg {
   width: 90%;
@@ -532,16 +580,25 @@ header {
 /* .indibox .site1 .site_bg {
   background: url(./images/sofurn.png) no-repeat 50% / cover;
 } */
+.indibox .site1 .site_bg {
+  background: url(./images/donwimun.png) no-repeat 50% / cover;
+}
 .indibox .site2 .site_bg {
   background: url(./images/grangand.png) no-repeat 50% / cover;
 }
-.indibox .site1 .site_bg {
-  background: url(./images/donwimun.png) no-repeat 50% / cover;
+.indibox .site3 .site_bg {
+  background: url(./images/Portfolio_main.png) no-repeat 50% / contain;
+}
+.indibox .site4 .moer_btn {
+  color: transparent;
+}
+.indibox .site4 .moer_btn a:hover {
+  color: transparent;
 }
 .site .site_bg {
   background: #fff;
 }
-.site4 .site_bg {
+.site3 .site_bg {
   background: #fff url(./images/dino.gif) no-repeat 85% 80% / 20%;
 }
 /* 팀 */
@@ -550,6 +607,12 @@ header {
 }
 .teambox .site2 .site_bg {
   background: url(./images/urbanic30.png) no-repeat 50% / cover;
+}
+.teambox .site3 .moer_btn {
+  color: transparent;
+}
+.teambox .site3 .moer_btn a:hover {
+  color: transparent;
 }
 /* ---- */
 .combox .gallery .site .site_txt {
@@ -731,9 +794,8 @@ header {
 }
 /* --------------- */
 .text3 {
-  font-family: "NeoDunggeunmoPro";
   font-size: 2rem;
-  margin-top: 7vw;
+  /* margin-top: 7vw; */
 }
 
 .text3::after {
